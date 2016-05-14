@@ -1,0 +1,127 @@
+@viewport {zoom : 1.0;width: device-width;}
+body {height:100%;width:100%;overflow-X:hidden;background-color:#fff;font-size: 12px;}
+a:hover { text-decoration: none;}
+.navbar {margin-bottom: 0px;}
+.navbar-nav { text-align: center; width: 100%;}
+.navbar-nav > li { float: inherit; display: inline-block; width: 19%; padding: 0px; }
+.navbar-default{ border:0px; z-index: 1000; background-color: #000066; min-height:40px;border-radius: 0px;}
+.navbar-default .navbar-nav > li > a { font-family: 'Josefin Sans', sans-serif; font-size: 1.7em; color:white; padding: .8em 0; text-align: center; border-right: 1px solid rgba(255,255,255,.2); border-left: 1px solid rgba(255,255,255,.2); display: block;}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus { background-color: white; color: #222;}
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {color: #222;background-color: white;}
+.navbar-default .navbar-nav > .open > a, 
+.navbar-default .navbar-nav > .open > a  :hover, 
+.navbar-default .navbar-nav > .open > a  :focus {color: #222;background-color: white;}
+.navbar-default .navbar-nav > .active > a:after, .navbar-default .navbar-nav > .active > a::after { position: absolute; left: 40%; top: 100%; content: ''; width: 0; height: 0; border-top: solid 20px #034762; border-left: solid 20px transparent; border-right: solid 20px transparent;}
+.navbar-header { width:auto; }
+.navbar-brand { padding-top: 0px }
+h1{ font-family: 'Catamaran', sans-serif; }
+h2{ font-family: 'Catamaran', sans-serif; }
+h3{ font-size: 1.9em; font-family: 'Catamaran', sans-serif; }
+h4{ font-family: 'Catamaran', sans-serif; }
+h5{ font-family: 'Catamaran', sans-serif; }
+p { font-size: 1.3em;text-align : justify; font-family: 'Catamaran', sans-serif; }
+.letra1 {font-family: 'Catamaran', sans-serif;}
+.letra2 {font-family: 'Electrolize', sans-serif;}
+.letra3 {font-family: 'Josefin Sans', sans-serif;}
+.desktoplg{display:block;}
+.tabletmd{display:none;}
+.movilxs{display:none;}
+@media (max-width:1366px){ .desktoplg {display: none;} .tabletmd {display: block;} .movilxs {display: none;} }
+@media (max-width:768px){ .desktoplg {display: none;} .tabletmd {display: none;} .movilxs {display: block;} }
+.margintop75{ margin-top: 75px; }
+.margintop50{ margin-top: 50px; }
+.margintop25{ margin-top: 25px; }
+.margintop15{ margin-top: 15px; }
+.margintop10{ margin-top: 10px; }
+.marginbot75{ margin-bottom: 75px; }
+.marginbot50{ margin-bottom: 50px; }
+.marginbot25{ margin-bottom: 25px; }
+.marginbot15{ margin-bottom: 15px; }
+.marginbot10{ margin-bottom: 10px; }
+.margin0 { margin: 0px; }
+.marginauto { margin: 0px auto 0px auto; }
+.paddingtop75{ padding-top: 75px; }
+.paddingtop50{ padding-top: 50px; }
+.paddingtop25{ padding-top: 25px; }
+.paddingtop10{ padding-top: 10px; }
+.paddingbot75{ padding-bottom: 75px; }
+.paddingbot50{	padding-bottom: 50px; }
+.paddingbot25{	padding-bottom: 25px; }
+.paddingbot10{	padding-bottom: 10px; }
+.paddingtopbot50{ padding: 50px 0px 50px 0px; }
+.letrablanca { color: #fff; }
+.letranegra { color: #000 }
+.letraroja { color: #88011e; }
+.letraazul { color: #000066; }
+.fondorojo { background-color:#990000 !important; }
+.fondogris {background-color: #CCCCCC; }
+.fondoazul { background-color: #000066; }
+.fondotransparente { background-color: transparent; }
+.width90 { width: 90%; }
+.width100 { width: 100%; }
+.heightbanner75 { height: 75px; min-height: 75px !important; }
+.height100 { height: 100px; }
+.footer { position:relative; z-index:100; background-color:#fff; min-height:40px; width:100%;}
+.copyright {padding: 10px 0px 0px 0px;font-size:12px;color:black;letter-spacing:3px;font-weight:500;text-align: center;}
+.displayinline {display: inline;}
+.displayblock {display: block;}
+.custom-pagination span, .custom-pagination a { display: inline-block; padding: 2px 10px; }
+.custom-pagination a { background-color: #ebebeb; color: #ff3c50; }
+.custom-pagination a:hover { background-color: #ff3c50; color: #fff; }
+.custom-pagination span.page-num { margin-right: 10px; padding: 0; }
+.custom-pagination span.dots { padding: 0; color: gainsboro; }
+.custom-pagination span.current { background-color: #ff3c50; color: #fff; }
+.input-group-addon { padding: 0px; border: 0px solid #ccc; }
+.btn-dismarca { background-color: transparent; border: 0px; border-radius: 0px; font-size: 1.2em; }
+.btn-search { background-color: transparent; border: 0px; border-radius: 0px; padding: 0px 10px 0px 10px; font-size: 1.3em; }
+::-webkit-input-placeholder {font-family: 'Catamaran', sans-serif; font-size: 1.3em; }
+:-moz-placeholder {font-family: 'Catamaran', sans-serif; font-size: 1.2em; }
+::-moz-placeholder { font-family: 'Catamaran', sans-serif; font-size: 1.2em; }
+:-ms-input-placeholder { font-family: 'Catamaran', sans-serif; font-size: 1.2em; }
+.btnfocus { box-shadow: 0 0 0px rgba(3,71,98, 1); border: 1px solid rgba(3,71,98, 1); }
+input[type=text]:focus { box-shadow: 0 0 0px rgba(3,71,98, 1); border: 0px solid rgba(3,71,98, 1); }
+.telf { position:absolute; top:10%; left:auto; right: auto; width:100%; text-align: center; }
+.titulosidebar { background-color: #88011e; padding: 11px; color: white;}
+.titulosidebar:after, .titulosidebar::after { position: absolute; left: 10%; content: ''; width: 0; height: 0; border-top: solid 25px #88011e; border-left: solid 25px transparent;border-right: solid 25px transparent;}
+.categoriassidebar { background-color: #ddd; padding: 10px;}
+.btn-buscar { width: 100%; color: white; background-color: #034762; border-radius: 0px; padding: 9px; font-size: 1.5em; font-family: 'Electrolize', sans-serif; }
+.btn-buscar ::-webkit-input-placeholder { font-family: 'Electrolize', sans-serif;  font-size: 1.3em; }
+.btn-buscar :-moz-placeholder { font-family: 'Electrolize', sans-serif;  font-size: 1.2em; }
+.btn-buscar ::-moz-placeholder { font-family: 'Electrolize', sans-serif;  font-size: 1.2em; }
+.btn-buscar :-ms-input-placeholder { font-family: 'Electrolize', sans-serif;  font-size: 1.2em; }
+.sidebar-option { position: relative; width: 100%; font-size: 1.3em; background-color: #034762; border-radius: 0px; margin: 2px; color: white; }
+#marca *, #modelo *, #año * { background-color:white; color: black; }
+.grid { width: 100%; margin: 0px auto; }
+.grid-item { float: left; }
+.grid-sizer, .grid-item { max-width: 50%; min-height:189px; max-height:385px; padding:0px; margin: 2px 0px 2px 0px; overflow: hidden;}
+.grid-item--width2 { max-width: 100%; width: 100%; }
+.grid-item--width3 { max-width: 75%; width: 75%; height: 256px; }
+.grid-item--width4 { max-width: 25%; width: 25%; height: 256px; }
+.grid-item--width5 { max-width: 33%; width: 33%; }
+.grid-item img {width: auto; height: 100%; position: relative; right: 50%; }
+.grid-item--width2 img { width:100%; height: auto; right: 0%; }
+.grid-item--width3 img { width:100%; height: auto; right: 0%; }
+.right0 {right: 0% !important;}
+.innerbanner { position: absolute; z-index: 1000; color: white; left: 50%; top: 50%; -webkit-transform: translateX(-50%)translateY(0%); -ms-transform: translateX(-50%)translateY(0%); transform: translateX(-50%)translateY(-50%); }
+.overlay{position:absolute;top:0;left:0;width:100%;height:100%;z-index:10;background-color:rgba(0,0,0,0.4);-webkit-transition:all 500ms ease;-o-transition:all 500ms ease;transition:all 500ms ease;}
+.comocomprar {font-weight: bold; letter-spacing: 3px;}
+
+@media (max-width: 768px){
+	.navbar-default .navbar-nav > .active > a:after, .navbar-default .navbar-nav > .active > a::after { position: absolute; left: 0%; top: 0%; content: ''; width: 0; height: 0; border-top: solid 0px #034762; border-left: solid 0px transparent; border-right: solid 0px transparent;}
+	.grid-sizer, .grid-item { max-width: 100%; width: 100%; min-height:auto; }
+	.grid-item img { min-height: 256px; }
+	.grid-item--width2 img { width:auto; height: 100%; right: 50%; }
+}
+@media (max-width:520px){ 
+	.navbar-default .navbar-collapse { background-color: white; border-bottom: 1px solid #034762; }
+	.navbar-default .navbar-nav > li > a { color:black; }
+	.navbar-default .navbar-nav > .active > a, 
+	.navbar-default .navbar-nav > .active > a:hover, 
+	.navbar-default .navbar-nav > .active > a:focus {border-bottom: 2px solid #034762;  border-top: 2px solid #034762; }
+	.navbar-nav > li { display: block; width: 100%; }
+	.navbar-nav { margin: 0px; }
+	.height100 { height: auto; }
+	.margintopmenos50xs { margin-top: -50px; }
+}
