@@ -38,7 +38,7 @@
                     </div>
                     <div class="col-md-3 col-sm-3 col-xs-12">
                         <div class="titulofooter">
-                            <h3 class="margin0 letra2">Repuestos por Marca</h3>
+                            <h3 class="margin0 letra2">Productos por Marca</h3>
                         </div>
                         <div class="margintop10 paddingtop1">
                             <form method="get" id="searchform" action="<?php bloginfo('url'); ?>/" >

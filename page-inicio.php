@@ -31,7 +31,7 @@
 				</div>
 	        <?php endwhile;
 	       } ?>
-
+		<div class="clearfix"></div>
       	<div class="grid-item grid-item--width4 fondorojo">
 				<div class="innerbanner">
 					<h1 class="letrablanca text-center"><i class="fa fa-clock-o fa-4x" aria-hidden="true"></i></h1>
