@@ -40,16 +40,19 @@ p { font-size: 1.3em;text-align : justify; font-family: 'Catamaran', sans-serif;
 .marginbot25{ margin-bottom: 25px; }
 .marginbot15{ margin-bottom: 15px; }
 .marginbot10{ margin-bottom: 10px; }
+.marginbot0{ margin-bottom: 0px; }
 .margin0 { margin: 0px; }
 .marginauto { margin: 0px auto 0px auto; }
 .paddingtop75{ padding-top: 75px; }
 .paddingtop50{ padding-top: 50px; }
 .paddingtop25{ padding-top: 25px; }
 .paddingtop10{ padding-top: 10px; }
+.paddingtop1{ padding-top: 1px; }
 .paddingbot75{ padding-bottom: 75px; }
 .paddingbot50{	padding-bottom: 50px; }
 .paddingbot25{	padding-bottom: 25px; }
 .paddingbot10{	padding-bottom: 10px; }
+.paddingbot0{	padding-bottom: 0px; }
 .paddingtopbot50{ padding: 50px 0px 50px 0px; }
 .letrablanca { color: #fff; }
 .letranegra { color: #000 }
@@ -107,6 +110,12 @@ input[type=text]:focus { box-shadow: 0 0 0px rgba(3,71,98, 1); border: 0px solid
 .innerbanner { position: absolute; z-index: 1000; color: white; left: 50%; top: 50%; -webkit-transform: translateX(-50%)translateY(0%); -ms-transform: translateX(-50%)translateY(0%); transform: translateX(-50%)translateY(-50%); }
 .overlay{position:absolute;top:0;left:0;width:100%;height:100%;z-index:10;background-color:rgba(0,0,0,0.4);-webkit-transition:all 500ms ease;-o-transition:all 500ms ease;transition:all 500ms ease;}
 .comocomprar {font-weight: bold; letter-spacing: 3px;}
+.titulofooter { background-color: #000066; padding: 11px; color: white;}
+.titulofooter:after, .titulofooter::after { position: absolute; left: 10%; content: ''; width: 0; height: 0; border-top: solid 25px #000066; border-left: solid 25px transparent;border-right: solid 25px transparent;}
+.footernav {list-style: none; font-size: 14px; padding: 0px;}
+.footernav li { padding: 10px 0px 0px 0px; }
+.footernav li a { color: black; }
+.btn-footer { padding: 0px; line-height: 0px; border: 0px; border-radius: 0px; background-color: transparent; }
 
 @media (max-width: 768px){
 	.navbar-default .navbar-nav > .active > a:after, .navbar-default .navbar-nav > .active > a::after { position: absolute; left: 0%; top: 0%; content: ''; width: 0; height: 0; border-top: solid 0px #034762; border-left: solid 0px transparent; border-right: solid 0px transparent;}
