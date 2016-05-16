@@ -11,7 +11,7 @@
         <footer>
             <div class="row margintop25 marginbot10">
                 <div class="container">
-                    <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="col-md-3 col-sm-3 col-xs-12">
                         <div class="titulofooter">
                             <h3 class="margin0 letra2">Contáctanos</h3>
                         </div>
@@ -22,7 +22,7 @@
                         <h5 class="marginbot0 letra2"><i class="fa fa-envelope"></i> fax</h5>
                         <h5 class="marginbot0 letra2"><i class="fa fa-envelope"></i> telf</h5>
                     </div>
-                    <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="col-md-3 col-sm-3 col-xs-12">
                         <div class="titulofooter">
                             <h3 class="margin0 letra2">Productos</h3>
                         </div>
@@ -36,7 +36,7 @@
                             <?php } ?>
                         </form>
                     </div>
-                    <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="col-md-3 col-sm-3 col-xs-12">
                         <div class="titulofooter">
                             <h3 class="margin0 letra2">Repuestos por Marca</h3>
                         </div>
@@ -62,7 +62,7 @@
                             </form>
                         </div>
                     </div>
-                    <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="col-md-3 col-sm-3 col-xs-12">
                         <div class="titulofooter">
                             <h3 class="margin0 letra2">Mapa del Sitio</h3>
                         </div>
