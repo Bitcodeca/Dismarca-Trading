@@ -8,6 +8,10 @@
 		<?php wp_head(); ?>
         <link href='https://fonts.googleapis.com/css?family=Catamaran|Electrolize|Josefin+Sans' rel='stylesheet' type='text/css'>
 	</head>
+    <?php
+        $page = get_page_by_title( 'Contacto' );
+        $link = get_page_link($page ->ID );
+    ?>
 	<body>
         <div class="topheader">
             <div class="container">
@@ -29,7 +33,7 @@
                     </div>
                     <div class="col-md-3 col-sm-3 hidden-xs height100">
                         <div class="telf">
-                            <a href="#"><h3 class="comocomprar letraroja"><i class="fa fa-shopping-cart fa-lg letraazul" aria-hidden="true"></i>¿Cómo <br> Comprar?</h3></a>
+                            <a href="<?php echo $link; ?>"><h3 class="comocomprar letraroja"><i class="fa fa-shopping-cart fa-lg letraazul" aria-hidden="true"></i>¿Cómo <br> Comprar?</h3></a>
                         </div>
                     </div>
                 </div>

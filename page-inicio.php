@@ -26,7 +26,7 @@
 					 	<?php echo the_post_thumbnail(); ?> 
 					<div class="innerbanner <?php echo $y; ?>">
 						<h2><?php echo get_the_title(); ?></h2>
-						<?php the_content('',FALSE,''); ?>
+						<h3><?php echo get_the_content('',FALSE,''); ?></h3>
 					</div>
 				</div>
 	        <?php endwhile;
@@ -54,22 +54,22 @@
  	</div>
   </div>
 </div>
-    <script>
-	  	jQuery(window).ready( function() {
-	        jQuery('.grid').isotope({
-				itemSelector: '.grid-item',
-				percentPosition: true,
-				masonry: {
-			    	columnWidth: 1
-			  	}
-			});
-	  	});
-    </script>
-    <script>
-    	jQuery(window).bind("load", function() {
-	    	setTimeout(function() { 
-	    		jQuery('.grid').isotope('layout'); 
-	    	}, 500);
+<script>
+  	jQuery(window).ready( function() {
+        jQuery('.grid').isotope({
+			itemSelector: '.grid-item',
+			percentPosition: true,
+			masonry: {
+		    	columnWidth: 1
+		  	}
 		});
-    </script>
+  	});
+</script>
+<script>
+	jQuery(window).bind("load", function() {
+    	setTimeout(function() { 
+    		jQuery('.grid').isotope('layout'); 
+    	}, 500);
+	});
+</script>
 <?php get_footer(); ?>
