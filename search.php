@@ -78,13 +78,14 @@
 					          $presentaciona = get_the_terms( $post->ID , 'presentacion' ); $presentacion=$presentaciona[0]->name;
 					          $procedenciaa = get_the_terms( $post->ID , 'procedencia' ); $procedencia=$procedenciaa[0]->name;
 					          $fabricaciona = get_the_terms( $post->ID , 'fabricacion' ); $fabricacion=$fabricaciona[0]->name;
-					          $marcaa = get_the_terms( $post->ID , 'marca' ); $marca=$marcaa[0]->name; ?>
+					          $marca2a = get_the_terms( $post->ID , 'marca' ); $marca2=$marca2a[0]->name; ?>
 				      			<div class="col-md-3 col-sm-3 col-xs-6 height350">
 					                <h2 class="letranegra"><?php echo get_the_title(); ?></h2>
 					                <?php echo the_post_thumbnail(); ?>
+					                <h5 class="letranegra"><?php echo $marca.' '.$modelo.' '.$ano; ?></h5>
 					                <h5 class="letranegra"><?php echo $grupo; ?></h5>
 					                <h5 class="letranegra"><?php echo $codigo; ?></h5>
-					                <h5 class="letranegra"><?php echo $marca; ?></h5>
+					                <h5 class="letranegra"><?php echo $marca2; ?></h5>
 					                <h5 class="letranegra">Aplicación: <?php echo $aplicacion1.', '.$aplicacion2; ?></h5>
 					                <h5 class="letranegra">Existencia: <?php echo $existencia; ?></h5>
 					            </div>
@@ -92,13 +93,14 @@
 					    } 
 					} 
 				endwhile; ?>
-            	<div class="clearfix"></div>
-          		<?php
-				$numpages = $wp_query->max_num_pages; if(!$numpages) { $numpages = 1; }
-				 echo "<span class='page-numbers page-num'>Página " . $paged . " de " . $numpages . "</span> "; ?>
-
-				<h4 class="pull-left"><?php previous_posts_link( '<<' ); ?></h4>
-				<h4 class="pull-right"><?php next_posts_link( '>>' ); ?></h4>
+				<?php $numpages = $wp_query->max_num_pages; if(!$numpages) { $numpages = 1; } ?>
+				<div class="col-md-12 text-center" id="busqueda">
+					<h4> <?php 
+						previous_posts_link( '<i class="fa fa-angle-double-left fa-2x" aria-hidden="true"></i>' ); 
+						echo "<span class='page-numbers page-num'>Página " . $paged . " de " . $numpages . "</span>";
+						next_posts_link( '<i class="fa fa-angle-double-right fa-2x" aria-hidden="true"></i>' );
+					?> </h4>
+				</div>
 			<?php endif; ?>
 	  </div>
 	</div>

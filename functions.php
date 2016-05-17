@@ -60,17 +60,17 @@ function custom_pagination($numpages = '', $pagerange = '', $paged='') {
     'end_size'        => 1,
     'mid_size'        => $pagerange,
     'prev_next'       => True,
-    'prev_text'       => __('&laquo;'),
-    'next_text'       => __('&raquo;'),
+    'prev_text'       => __('<i class="fa fa-angle-double-left fa-2x" aria-hidden="true"></i>'),
+    'next_text'       => __('<i class="fa fa-angle-double-right fa-2x" aria-hidden="true"></i>'),
     'type'            => 'plain',
     'add_args'        => false,
     'add_fragment'    => ''
   );
   $paginate_links = paginate_links($pagination_args);
   if ($paginate_links) {
-    echo "<nav class='custom-pagination'>";
-      echo "<span class='page-numbers page-num'>Página " . $paged . " de " . $numpages . "</span> ";
-      echo $paginate_links;
+    echo "<nav class='custom-pagination text-center'>";
+      echo "<h4 class='page-numbers page-num'>Página " . $paged . " de " . $numpages . "</h4> ";
+      echo "<h4 class='text-center'>".$paginate_links."</h4>";
     echo "</nav>";
   }
 }

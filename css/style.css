@@ -117,6 +117,9 @@ input[type=text]:focus { box-shadow: 0 0 0px rgba(3,71,98, 1); border: 0px solid
 .footernav li { padding: 10px 0px 0px 0px; }
 .footernav li a { color: black; }
 .btn-footer { padding: 0px; line-height: 0px; border: 0px; border-radius: 0px; background-color: transparent; }
+#busqueda a { display: inline-block; padding: 2px 10px; }
+#busqueda  a { background-color: #ebebeb; color: #ff3c50; }
+#busqueda  a:hover { background-color: #ff3c50; color: #fff; }
 
 @media (max-width: 768px){
 	.navbar-default .navbar-nav > .active > a:after, .navbar-default .navbar-nav > .active > a::after { position: absolute; left: 0%; top: 0%; content: ''; width: 0; height: 0; border-top: solid 0px #034762; border-left: solid 0px transparent; border-right: solid 0px transparent;}
