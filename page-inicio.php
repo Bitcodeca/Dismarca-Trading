@@ -16,8 +16,11 @@
 	      		} elseif ($tamano==2) {
 	      			$x='';
 	      			$y='';
-	      		} else {
+	      		} elseif ($tamano==3) {
 	      			$x='grid-item--width2';
+	      			$y='width90';
+	      		} else {
+	      			$x='grid-item--width3 fondogris';
 	      			$y='width90';
 	      		}
 	      		?>

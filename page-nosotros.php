@@ -12,8 +12,7 @@
       		<div class="overlay"></div>
 			<img src="<?php echo get_bloginfo('template_directory');?>/img/dsmc01.jpg" class="right0">
 			<div class="innerbanner width90 text-center">
-				<h2>"El entusiasmo es lo que hace que la esperanza brille como las estrellas"<br><small class="pull-right letrablanca">Henry Ford
-</small></h2>
+				<h2><i class="fa fa-quote-left fa-lg fa-border"></i>El entusiasmo es lo que hace que la esperanza brille como las estrellas<br><small class="pull-right letrablanca">Henry Ford</small></h2>
 			</div>
 		</div>
       	<div class="grid-item grid-item--width3 fondogris">

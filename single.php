@@ -6,7 +6,7 @@
                 $id = get_the_ID(); ?>
 				<div class="row">
                   	<div class="col-md-6">
-						<?php the_title('<h2 class="letranaranja hvr-underline-from-center">','</h2>' ); ?>
+						<?php the_title('<h2 class="">','</h2>' ); ?>
 					</div>
 				</div>
 			<?php endwhile; endif; ?>

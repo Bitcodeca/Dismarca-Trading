@@ -9,7 +9,7 @@
         <link href='https://fonts.googleapis.com/css?family=Catamaran|Electrolize|Josefin+Sans' rel='stylesheet' type='text/css'>
 	</head>
     <?php
-        $page = get_page_by_title( 'Contacto' );
+        $page = get_page_by_title( 'Comprar' );
         $link = get_page_link($page ->ID );
     ?>
 	<body>
