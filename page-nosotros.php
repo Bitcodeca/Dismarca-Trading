@@ -5,7 +5,7 @@
       	<div class="grid-sizer"></div>
       	<div class="grid-item grid-item--width2 width100 heightbanner75 fondotransparente">
 			<div class="innerbanner">
-				<h2 class="letranegra">Dismarca</h2>
+				<img src="<?php echo get_bloginfo('template_directory');?>/img/dismarcaheader.png" class="img-responsive marginauto">
 			</div>
 		</div>
       	<div class="grid-item grid-item--width2">
