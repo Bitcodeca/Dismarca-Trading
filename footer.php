@@ -9,9 +9,9 @@
         } else { $x=$colmarca; }
     ?>
         <footer>
-            <div class="row margintop50 marginbot10">
+            <div class="row margintop50">
                 <div class="container">
-                    <div class="col-md-3 col-sm-3 col-xs-12">
+                    <div class="col-md-3 col-sm-3 col-xs-12  marginbot10">
                         <div class="titulofooter">
                             <h3 class="margin0 letra2">Contáctanos</h3>
                         </div>
@@ -22,7 +22,7 @@
                         <h5 class="marginbot0 letra2"><i class="fa fa-envelope"></i> fax</h5>
                         <h5 class="marginbot0 letra2"><i class="fa fa-envelope"></i> telf</h5>
                     </div>
-                    <div class="col-md-3 col-sm-3 col-xs-12">
+                    <div class="col-md-3 col-sm-3 col-xs-12  marginbot10">
                         <div class="titulofooter">
                             <h3 class="margin0 letra2">Productos</h3>
                         </div>
@@ -36,14 +36,14 @@
                             <?php } ?>
                         </form>
                     </div>
-                    <div class="col-md-3 col-sm-3 col-xs-12">
+                    <div class="col-md-3 col-sm-3 col-xs-12  marginbot10">
                         <div class="titulofooter">
                             <h3 class="margin0 letra2">Productos por Marca</h3>
                         </div>
                         <div class="margintop10 paddingtop1">
                             <form method="get" id="searchform" action="<?php bloginfo('url'); ?>/" >
                                 <label class="hidden" for="s"><?php _e('Search:'); ?></label>
-                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                <div class="col-md-6 col-sm-6 col-xs-6">
                                 <?php $marca = get_terms( 'marca', array( 'orderby' => 'name', 'hide_empty' => 1 ) );
                                 $y=0;
                                 foreach ($marca as $i) { 
@@ -54,7 +54,7 @@
                                 <?php } else { 
                                     $y=0; ?>
                                     </div>
-                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <div class="col-md-6 col-sm-6 col-xs-6">
                                 <?php }
                                     $y++;
                                 } ?>
@@ -62,7 +62,7 @@
                             </form>
                         </div>
                     </div>
-                    <div class="col-md-3 col-sm-3 col-xs-12">
+                    <div class="col-md-3 col-sm-3 col-xs-12  marginbot10">
                         <div class="titulofooter">
                             <h3 class="margin0 letra2">Mapa del Sitio</h3>
                         </div>

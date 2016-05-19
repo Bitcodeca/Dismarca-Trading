@@ -173,8 +173,10 @@ input[type=text]:focus { box-shadow: 0 0 0px rgba(3,71,98, 1); border: 0px solid
 @media (max-width: 768px){
 	.navbar-default .navbar-nav > .active > a:after, .navbar-default .navbar-nav > .active > a::after { position: absolute; left: 0%; top: 0%; content: ''; width: 0; height: 0; border-top: solid 0px #034762; border-left: solid 0px transparent; border-right: solid 0px transparent;}
 	.grid-sizer, .grid-item { max-width: 100%; width: 100%; min-height:auto; }
-	.grid-item img { min-height: 256px; }
-	.grid-item--width2 img { width:auto; height: 100%; right: 50%; }
+	.grid-item img { height: 256px; }
+	.grid-item--width2 img { width:auto; height: 256px; right: 50%; }
+	.grid-item--width2:hover img { width: auto; height: 256px; right: 20%; }
+	.textoservicios { padding: 10px 10px 10px 10px; }
 }
 @media (max-width:520px){ 
 	.navbar-default .navbar-collapse { background-color: white; border-bottom: 1px solid #034762; }
