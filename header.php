@@ -25,7 +25,7 @@
                     </div>
                     <div class="col-md-6 col-sm-6 col-xs-12 height100 margintopmenos50xs">
                         <div class="margintop25">
-                            <p class="text-center letraroja"><b>Teléfonos: 0251-xxxxxx / 0251-xxxxxx</b></p>
+                            <p class="text-center letraroja"><b><i class="fa fa-phone letraazul" aria-hidden="true"></i> 0251-xxxxxx | <i class="fa fa-phone letraazul" aria-hidden="true"></i> 0251-xxxxxx</b></p>
                         </div>
                         <div class="margintop10 marginbot10">
                             <?php get_search_form(); ?>

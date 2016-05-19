@@ -19,7 +19,7 @@
 					</div>
 				</div>
 	      		<?php } elseif ($tamano==2) { ?>
-          		<div class="grid-item">
+          		<div class="grid-item gridzoom">
 	      			<div class="overlay"></div>
 					 	<?php echo the_post_thumbnail(); ?> 
 					<div class="innerbanner">

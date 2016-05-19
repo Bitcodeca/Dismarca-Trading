@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <div class="container margintop25">
-	<h1 class="fa-3x text-center margin0 paddingtop25"><i class="fa fa-wrench letraroja" aria-hidden="true"></i> Servicios Dismarca</h1>
+	<h1 class="fa-3x text-center margin0 paddingtop25"><i class="fa fa-wrench letraroja" aria-hidden="true"></i> Nuestros Servicios</h1>
   	<div class="">
 	 	<div class="col-md-4 col-sm-4 col-xs-12 margintopmenos30">
 	 		<div class="row">
