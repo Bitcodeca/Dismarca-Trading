@@ -1,5 +1,7 @@
 <div class="col-md-3 col-sm-3 col-xs-12">
-	<?php get_search_form(); ?>
+	<div class="xsmargin25">
+		<?php get_search_form(); ?>
+	</div>
 	<form method="get" id="searchform" action="<?php bloginfo('url'); ?>/" class="margintop10">
 	<label class="hidden" for="s"><?php _e('Search:'); ?></label>
 		<div class="titulosidebar">

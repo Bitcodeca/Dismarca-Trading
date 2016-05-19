@@ -27,13 +27,13 @@
                         <div class="margintop25">
                             <p class="text-center letraroja"><b><i class="fa fa-phone letraazul" aria-hidden="true"></i> 0251-xxxxxx | <i class="fa fa-phone letraazul" aria-hidden="true"></i> 0251-xxxxxx</b></p>
                         </div>
-                        <div class="margintop10 marginbot10">
+                        <div class="margintop10 marginbot10 xsmargin25">
                             <?php get_search_form(); ?>
                         </div>
                     </div>
-                    <div class="col-md-3 col-sm-3 hidden-xs height100">
+                    <div class="col-md-3 col-sm-3 col-md-12 height100">
                         <div class="telf">
-                            <a href="<?php echo $link; ?>"><h3 class="comocomprar letraroja"><i class="fa fa-shopping-cart fa-lg letraazul" aria-hidden="true"></i>¿Cómo <br> Comprar?</h3></a>
+                            <a href="<?php echo $link; ?>"><h3 class="comocomprar letraroja"><i class="fa fa-shopping-cart fa-lg letraazul" aria-hidden="true"></i>¿Cómo <br class="hidden-xs"> Comprar?</h3></a>
                         </div>
                     </div>
                 </div>

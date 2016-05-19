@@ -15,26 +15,27 @@
   	</div>
   	<div class="col-md-6 col-sm-6 col-xs-12">
   		<h2><i class="fa fa-envelope-o letraroja" aria-hidden="true"></i> ¡Escríbenos!</h2>
-		<section class="content">
 			<span class="input input--hoshi">
-				<input class="input__field input__field--hoshi" type="text" id="input-4" />
+				<input class="input__field input__field--hoshi" type="text" id="input-4" required />
 				<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="input-4">
-					<span class="input__label-content input__label-content--hoshi">Name</span>
+					<span class="input__label-content input__label-content--hoshi">Nombre y Apellido</span>
 				</label>
 			</span>
 			<span class="input input--hoshi">
-				<input class="input__field input__field--hoshi" type="text" id="input-5" />
+				<input class="input__field input__field--hoshi" type="text" id="input-5" required />
 				<label class="input__label input__label--hoshi input__label--hoshi-color-2" for="input-5">
-					<span class="input__label-content input__label-content--hoshi">Street</span>
+					<span class="input__label-content input__label-content--hoshi">Teléfono</span>
 				</label>
 			</span>
 			<span class="input input--hoshi">
-				<input class="input__field input__field--hoshi" type="text" id="input-6" />
+				<input class="input__field input__field--hoshi" type="text" id="input-6" required />
 				<label class="input__label input__label--hoshi input__label--hoshi-color-3" for="input-6">
-					<span class="input__label-content input__label-content--hoshi">Town</span>
+					<span class="input__label-content input__label-content--hoshi">Email</span>
 				</label>
 			</span>
-		</section>
+			<span class="input">
+				<textarea  ng-model="formData.message" id="message" name="message" class="form-control" rows="15" style="resize: vertical;" placeholder="Mensaje"  required></textarea>
+			</span>
 		<script src="<?php echo get_bloginfo('template_directory');?>/js/classie.js"></script>
 		<script>
 			(function() {
