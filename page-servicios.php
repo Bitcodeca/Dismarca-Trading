@@ -30,7 +30,7 @@
 			    	if( $my_query->have_posts() ) { $x=0;
 				        while ($my_query->have_posts()) : $my_query->the_post(); $id = get_the_ID(); ?>
 				      		<h1 class="letraazul"><?php the_title(); ?></h1>
-				      		<h5><?php the_content(); ?></h5>
+				      		<h4><?php the_content(); ?></h4>
 			      		<?php endwhile;
 				    } 
 				?>		

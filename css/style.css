@@ -104,11 +104,12 @@ input[type=text]:focus { box-shadow: 0 0 0px rgba(3,71,98, 1); border: 0px solid
 #marca *, #modelo *, #año * { background-color:white; color: black; }
 .grid { width: 100%; margin: 0px auto; }
 .grid-item { float: left; }
-.grid-sizer, .grid-item { max-width: 50%; min-height:189px; max-height:375px; padding:0px; margin: 2px 0px 2px 0px; overflow: hidden;}
-.grid-item--width2 { max-width: 100%; width: 100%; }
+.grid-sizer, .grid-item { min-height:189px; padding:0px; margin: 2px 0px 2px 0px; overflow: hidden;}
+.grid-item--width2 { max-width: 100%; width: 100%; max-height:375px; }
 .grid-item--width3 { max-width: 75%; width: 75%; height: 256px; }
 .grid-item--width4 { max-width: 25%; width: 25%; height: 256px; }
 .grid-item--width5 { max-width: 33.33%; width: 33.33%; }
+.grid-item--width6 { max-width: 50%; max-height:375px; }
 .grid-item--height2 { height: 256px; }
 .grid-item img { width: auto; height: 100%; position: relative; right: 50%; }
 .gridzoom img { webkit-transition: all 1s ease; -moz-transition: all 1s ease; -o-transition: all 1s ease; -ms-transition: all 1s ease; transition: all 1s ease; }
@@ -140,6 +141,7 @@ input[type=text]:focus { box-shadow: 0 0 0px rgba(3,71,98, 1); border: 0px solid
 .textoservicios {padding: 10px 55px 10px 55px;}
 .puntorojo2{position:relative;left:50%;z-index:-1;width:100px;height:100px;border-radius:50%;background:#990000;-webkit-transform:translateX(-50%)translateY(0%);transform:translateX(-50%)translateY(0%);}
 .puntorojo2{bottom:-110px;}
+.minheight350 { min-height: 350px; }
 
 .input { position: relative; z-index: 1; display: inline-block; margin: 1em; width: calc(100% - 2em); vertical-align: top; }
 .input__field { position: relative; display: block; float: right; padding: 0.8em; width: 60%; border: none; border-radius: 0; background: #f0f0f0; color: #aaa; font-weight: bold; -webkit-appearance: none; }
@@ -172,10 +174,12 @@ input[type=text]:focus { box-shadow: 0 0 0px rgba(3,71,98, 1); border: 0px solid
 }
 @media (max-width: 768px){
 	.navbar-default .navbar-nav > .active > a:after, .navbar-default .navbar-nav > .active > a::after { position: absolute; left: 0%; top: 0%; content: ''; width: 0; height: 0; border-top: solid 0px #034762; border-left: solid 0px transparent; border-right: solid 0px transparent;}
-	.grid-sizer, .grid-item { max-width: 100%; width: 100%; min-height:auto; }
+	.grid-sizer, .grid-item { max-width: 100%; width: 100%; }
 	.grid-item img { height: 256px; }
 	.grid-item--width2 img { width:auto; height: 256px; right: 50%; }
 	.grid-item--width2:hover img { width: auto; height: 256px; right: 20%; }
+	.grid-item--width3 { width: 100%; height: auto; min-height: 256px; max-height:1000px; }
+	.grid-item--width3 .innerbanner { padding: 50px 0px 50px 0px; }
 	.textoservicios { padding: 10px 10px 10px 10px; }
 }
 @media (max-width:520px){ 

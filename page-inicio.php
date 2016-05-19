@@ -19,7 +19,7 @@
 					</div>
 				</div>
 	      		<?php } elseif ($tamano==2) { ?>
-          		<div class="grid-item gridzoom">
+          		<div class="grid-item grid-item--width6 gridzoom">
 	      			<div class="overlay"></div>
 					 	<?php echo the_post_thumbnail(); ?> 
 					<div class="innerbanner">
@@ -38,23 +38,23 @@
 				</div>
 	      		<?php } else { 
 	      			if ($x % 2 == 0) { ?>
-	      				<div class="grid-item grid-item--width3 fondogris">
+	      				<div class="grid-item col-md-9 col-sm-9 col-xs-12 fondotransparente">
 	      					<div class="innerbanner width90">
 								<h3 class><?php the_content(); ?></h3>
 							</div>
 						</div>
-				      	<div class="grid-item grid-item--width4 fondorojo">
+				      	<div class="grid-item col-md-3 col-sm-3 col-xs-12 fondorojo">
 							<div class="innerbanner">
 								<h2 class="letrablanca text-center"><?php echo get_the_title(); ?></h2>
 							</div>
 						</div>
 					<?php } else { ?>
-				      	<div class="grid-item grid-item--width4 fondoazul">
+				      	<div class="grid-item col-md-3 col-sm-3 col-xs-12 fondoazul">
 							<div class="innerbanner">
 								<h2 class="letrablanca text-center"><?php echo get_the_title(); ?></h2>
 							</div>
 						</div>
-	      				<div class="grid-item grid-item--width3 fondogris"> 
+	      				<div class="grid-item col-md-9 col-sm-9 col-xs-12  fondotransparente"> 
 							<div class="innerbanner width90">
 								<h5 class="letranegra"><?php the_content(); ?></h5>
 							</div>
