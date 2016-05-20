@@ -14,8 +14,8 @@
 	      			<div class="overlay"></div>
 					 	<?php echo the_post_thumbnail(); ?> 
 					<div class="innerbanner">
-						<h2><?php echo get_the_title(); ?></h2>
-						<h3><?php the_content(); ?></h3>
+						<h2 class="text-center"><?php echo get_the_title(); ?></h2>
+						<h4 class="text-center"><?php the_content(); ?></h4>
 					</div>
 				</div>
 	      		<?php } elseif ($tamano==2) { ?>
@@ -23,8 +23,8 @@
 	      			<div class="overlay"></div>
 					 	<?php echo the_post_thumbnail(); ?> 
 					<div class="innerbanner">
-						<h2><?php echo get_the_title(); ?></h2>
-						<h3><?php the_content(); ?></h3>
+						<h2 class="text-center"><?php echo get_the_title(); ?></h2>
+						<h4 class="text-center"><?php the_content(); ?></h4>
 					</div>
 				</div>
 	      		<?php } elseif ($tamano==3) { ?>
@@ -33,7 +33,7 @@
 					 	<?php echo the_post_thumbnail(); ?> 
 					<div class="innerbanner width90">
 						<h2><?php echo get_the_title(); ?></h2>
-						<h3><?php the_content(); ?></h3>
+						<h4><?php the_content(); ?></h4>
 					</div>
 				</div>
 	      		<?php } else { 
