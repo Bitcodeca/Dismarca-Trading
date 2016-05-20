@@ -15,6 +15,7 @@
         $custom_query = new WP_Query( $custom_args );
         if ( $custom_query->have_posts() ) : 
           while ( $custom_query->have_posts() ) : $custom_query->the_post();
+          $postid = get_the_ID();
           $codigoa = get_the_terms( $post->ID , 'codigo' ); $codigo=$codigoa[0]->name;
           $grupoa = get_the_terms( $post->ID , 'grupo' ); $grupo=$grupoa[0]->name;
           $existenciaa = get_the_terms( $post->ID , 'existencia' ); $existencia=$existenciaa[0]->name;
@@ -34,14 +35,27 @@
           $fabricaciona = get_the_terms( $post->ID , 'fabricacion' ); $fabricacion=$fabricaciona[0]->name;
           $marcaa = get_the_terms( $post->ID , 'marca' ); $marca=$marcaa[0]->name;
           ?>
-            <div class="col-md-3 col-sm-3 col-xs-6 height350">
-                <h2 class="letranegra"><?php echo get_the_title(); ?></h2>
-                <?php echo the_post_thumbnail(); ?>
-                <h5 class="letranegra"><?php echo $grupo; ?></h5>
-                <h5 class="letranegra"><?php echo $codigo; ?></h5>
-                <h5 class="letranegra"><?php echo $marca; ?></h5>
-                <h5 class="letranegra">Aplicación: <?php echo $aplicacion1.', '.$aplicacion2; ?></h5>
-                <h5 class="letranegra">Existencia: <?php echo $existencia; ?></h5>
+            <a href="#<?php echo $postid; ?>" class="fancybox">
+              <div class="col-md-3 col-sm-3 col-xs-6 height350">
+                  <h2 class="letranegra"><?php echo get_the_title(); ?></h2>
+                  <?php echo the_post_thumbnail(); ?>
+                  <h5 class="letranegra"><?php echo $grupo; ?></h5>
+                  <h5 class="letranegra"><?php echo $codigo; ?></h5>
+                  <h5 class="letranegra"><?php echo $marca; ?></h5>
+                  <h5 class="letranegra">Aplicación: <?php echo $aplicacion1.', '.$aplicacion2; ?></h5>
+                  <h5 class="letranegra">Existencia: <?php echo $existencia; ?></h5>
+              </div>
+            </a>
+            <div style="display:none">
+                <div id="<?php echo $postid; ?>">
+                  <h2 class="letranegra"><?php echo get_the_title(); ?></h2>
+                  <?php echo the_post_thumbnail(); ?>
+                  <h5 class="letranegra"><?php echo $grupo; ?></h5>
+                  <h5 class="letranegra"><?php echo $codigo; ?></h5>
+                  <h5 class="letranegra"><?php echo $marca; ?></h5>
+                  <h5 class="letranegra">Aplicación: <?php echo $aplicacion1.', '.$aplicacion2; ?></h5>
+                  <h5 class="letranegra">Existencia: <?php echo $existencia; ?></h5>
+                </div>
             </div>
           <?php endwhile; ?>
           <div class="clearfix"></div>
@@ -50,4 +64,15 @@
          endif; ?>
   </div>
 </div>
+<script>
+  jQuery(document).ready(function ($) {
+      jQuery('.fancybox').attr('rel', 'media-gallery').fancybox({
+          prevEffect: 'none',
+          nextEffect: 'none',
+          closeBtn: true,
+          arrows: true,
+          nextClick: false
+      });
+  });
+</script>
 <?php get_footer(); ?>
