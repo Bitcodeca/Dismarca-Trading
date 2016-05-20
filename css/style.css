@@ -33,6 +33,7 @@ p { font-size: 1.3em;text-align : justify; font-family: 'Catamaran', sans-serif;
 .margintop75{ margin-top: 75px; }
 .margintop50{ margin-top: 50px; }
 .margintop25{ margin-top: 25px; }
+.margintop20{ margin-top: 20px; }
 .margintop15{ margin-top: 15px; }
 .margintop10{ margin-top: 10px; }
 .margintopmenos30 { margin-top: -30px; }
@@ -40,6 +41,7 @@ p { font-size: 1.3em;text-align : justify; font-family: 'Catamaran', sans-serif;
 .marginbot75{ margin-bottom: 75px; }
 .marginbot50{ margin-bottom: 50px; }
 .marginbot25{ margin-bottom: 25px; }
+.marginbot20{ margin-bottom: 20px; }
 .marginbot15{ margin-bottom: 15px; }
 .marginbot10{ margin-bottom: 10px; }
 .marginbot0{ margin-bottom: 0px; }
@@ -142,6 +144,8 @@ input[type=text]:focus { box-shadow: 0 0 0px rgba(3,71,98, 1); border: 0px solid
 .puntorojo2{position:relative;left:50%;z-index:-1;width:100px;height:100px;border-radius:50%;background:#990000;-webkit-transform:translateX(-50%)translateY(0%);transform:translateX(-50%)translateY(0%);}
 .puntorojo2{bottom:-110px;}
 .minheight350 { min-height: 350px; }
+.textoservicios ul li { font-size: 1.3em; }
+.innerservicioshorarioubicacion { padding: 25px 60px 0px 60px; }
 
 .input { position: relative; z-index: 1; display: inline-block; margin: 1em; width: calc(100% - 2em); vertical-align: top; }
 .input__field { position: relative; display: block; float: right; padding: 0.8em; width: 60%; border: none; border-radius: 0; background: #f0f0f0; color: #aaa; font-weight: bold; -webkit-appearance: none; }
@@ -183,6 +187,7 @@ input[type=text]:focus { box-shadow: 0 0 0px rgba(3,71,98, 1); border: 0px solid
 	.textoservicios { padding: 10px 10px 10px 10px; }
 	.telf { position: relative; top: 10%; left: auto; right: auto; width: 100%; text-align: center; }
 	.xsmargin25{ margin: 25px 0px 25px 0px; }
+	.minheight550 { min-height: 550px; }
 }
 @media (max-width:520px){ 
 	.navbar-default .navbar-collapse { background-color: white; border-bottom: 1px solid #034762; }

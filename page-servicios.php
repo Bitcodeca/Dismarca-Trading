@@ -8,8 +8,13 @@
 		 			<div class="puntoazul"></div>
 					<i class="fa fa-clock-o fa-5x letrablanca icono" aria-hidden="true"></i>
 				</div>
-				<div class="height350 fondoazul paddingtop25">
+				<div class="height350 fondoazul innerservicioshorarioubicacion">
 					<h2 class="text-center letrablanca">Horario</h2>
+					<h4 class="letrablanca margintop20">Lunes</h4>
+					<h4 class="letrablanca margintop20">Martes</h4>
+					<h4 class="letrablanca margintop20">Miércoles</h4>
+					<h4 class="letrablanca margintop20">Jueves</h4>
+					<h4 class="letrablanca margintop20">Viernes</h4>
 				</div>
 			</div>
 			<div class="row">
@@ -17,7 +22,7 @@
 		 			<div class="puntorojo"></div>
 					<i class="fa fa-map-marker fa-5x letrablanca icono" aria-hidden="true"></i>
 				</div>
-				<div class="height350 fondorojo paddingtop25">
+				<div class="height350 fondorojo innerservicioshorarioubicacion">
 					<h2 class="letrablanca text-center">Ubicación</h2>
 				</div>
 			</div>
@@ -30,7 +35,7 @@
 			    	if( $my_query->have_posts() ) { $x=0;
 				        while ($my_query->have_posts()) : $my_query->the_post(); $id = get_the_ID(); ?>
 				      		<h1 class="letraazul"><?php the_title(); ?></h1>
-				      		<h4><?php the_content(); ?></h4>
+				      		<h5><?php the_content(); ?></h5>
 			      		<?php endwhile;
 				    } 
 				?>		

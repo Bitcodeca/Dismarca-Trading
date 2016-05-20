@@ -1,13 +1,9 @@
 <?php get_header(); ?>
 <div class="container margintop25">
-  <div class="">
+<h1 class="fa-3x text-center margin0 paddingtop25"><i class="fa fa-certificate letraroja" aria-hidden="true"></i> Conócenos</h1>
+  <div class="margintop25">
 	<div class="grid">
       	<div class="grid-sizer"></div>
-      	<div class="grid-item grid-item--width2 width100 heightbanner75 fondotransparente">
-			<div class="innerbanner">
-				<img src="<?php echo get_bloginfo('template_directory');?>/img/dismarcaheader.png" class="img-responsive marginauto">
-			</div>
-		</div>
       	<div class="grid-item grid-item--width2">
       		<div class="overlay"></div>
 			<img src="<?php echo get_bloginfo('template_directory');?>/img/dsmc01.jpg" class="right0">
@@ -15,7 +11,7 @@
 				<h2><i class="fa fa-quote-left fa-lg fa-border"></i>El entusiasmo es lo que hace que la esperanza brille como las estrellas<br><small class="pull-right letrablanca">Henry Ford</small></h2>
 			</div>
 		</div>
-      	<div class="minheight350 grid-item col-md-9 col-sm-9 col-xs-12 fondotransparente">
+      	<div class="minheight550 minheight350 grid-item col-md-9 col-sm-9 col-xs-12 fondotransparente">
 				<div class="innerbanner width90">
 					<h2 class="letraazul">Nuestra Historia</h2>
 					<p class="letraazul">Establecida en 1990, Dismarca C.A es una de las tiendas más importantes en cuanto a la venta y distribución de repuestos para vehículos en Venezuela. Nuestro catálogo se extiende a cientos de repuestos creados por los mejores fabricantes del mercado doméstico e internacional.</p>
