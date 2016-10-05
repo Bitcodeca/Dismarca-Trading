@@ -381,33 +381,33 @@ function datos_taxonomy() {
 /////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////// TAXONOMIA OEM ////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////
-add_action( 'init', 'OEM_taxonomy', 0 );
-function OEM_taxonomy() {
+add_action( 'init', 'oem_taxonomy', 0 );
+function oem_taxonomy() {
   $labels = array(
-    'name' => _x( 'OEM', 'taxonomy general name' ),
-    'singular_name' => _x( 'OEM', 'taxonomy singular name' ),
-    'search_items' =>  __( 'Buscar OEM' ),
-    'popular_items' => __( 'OEM frecuentes' ),
-    'all_items' => __( 'Todas los OEM' ),
+    'name' => _x( 'oem', 'taxonomy general name' ),
+    'singular_name' => _x( 'oem', 'taxonomy singular name' ),
+    'search_items' =>  __( 'Buscar oem' ),
+    'popular_items' => __( 'oem frecuentes' ),
+    'all_items' => __( 'Todas los oem' ),
     'parent_item' => null,
     'parent_item_colon' => null,
-    'edit_item' => __( 'Editar OEM' ), 
-    'update_item' => __( 'Actualizar OEM' ),
-    'add_new_item' => __( 'Agregar nuevo OEM' ),
-    'new_item_name' => __( 'Cantidad de nuevos OEM' ),
+    'edit_item' => __( 'Editar oem' ), 
+    'update_item' => __( 'Actualizar oem' ),
+    'add_new_item' => __( 'Agregar nuevo oem' ),
+    'new_item_name' => __( 'Cantidad de nuevos oem' ),
     'separate_items_with_commas' => __( '' ),
-    'add_or_remove_items' => __( 'Agregar o Quitar OEM' ),
-    'choose_from_most_used' => __( 'Escoger de los OEM utilizados' ),
-    'menu_name' => __( 'OEM' ),
+    'add_or_remove_items' => __( 'Agregar o Quitar oem' ),
+    'choose_from_most_used' => __( 'Escoger de los oem utilizados' ),
+    'menu_name' => __( 'oem' ),
   ); 
-  register_taxonomy('OEM','productos',array(
+  register_taxonomy('oem','productos',array(
     'hierarchical' => false,
     'labels' => $labels,
     'show_ui' => true,
     'show_admin_column' => true,
     'update_count_callback' => '_update_post_term_count',
     'query_var' => true,
-    'rewrite' => array( 'slug' => 'OEM' ),
+    'rewrite' => array( 'slug' => 'oem' ),
   ));
 }
 
@@ -619,8 +619,8 @@ function condicion_taxonomy() {
 /////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////// TAXONOMIA FOB ////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////
-add_action( 'init', 'FOB_taxonomy', 0 );
-function FOB_taxonomy() {
+add_action( 'init', 'fob_taxonomy', 0 );
+function fob_taxonomy() {
   $labels = array(
     'name' => _x( 'FOB', 'taxonomy general name' ),
     'singular_name' => _x( 'FOB', 'taxonomy singular name' ),
@@ -670,7 +670,7 @@ function especificacion_taxonomy() {
     'separate_items_with_commas' => __( '' ),
     'add_or_remove_items' => __( 'Agregar o Quitar especificación' ),
     'choose_from_most_used' => __( 'Escoger de las especificaciones utilizadas' ),
-    'menu_name' => __( 'FOB' ),
+    'menu_name' => __( 'Especificación' ),
   ); 
   register_taxonomy('especificacion','productos',array(
     'hierarchical' => false,
@@ -703,7 +703,7 @@ function factor_taxonomy() {
     'separate_items_with_commas' => __( '' ),
     'add_or_remove_items' => __( 'Agregar o Quitar factor' ),
     'choose_from_most_used' => __( 'Escoger de los factor utilizados' ),
-    'menu_name' => __( 'factor' ),
+    'menu_name' => __( 'Factor' ),
   ); 
   register_taxonomy('factor','productos',array(
     'hierarchical' => false,
@@ -838,7 +838,7 @@ function marca_taxonomy() {
     'separate_items_with_commas' => __( '' ),
     'add_or_remove_items' => __( 'Agregar o Quitar marca' ),
     'choose_from_most_used' => __( 'Escoger de las marca utilizados' ),
-    'menu_name' => __( 'marca' ),
+    'menu_name' => __( 'Marca' ),
   ); 
   register_taxonomy('marca','aplicacion',array(
     'hierarchical' => false,
@@ -871,7 +871,7 @@ function modelo_taxonomy() {
     'separate_items_with_commas' => __( '' ),
     'add_or_remove_items' => __( 'Agregar o Quitar modelo' ),
     'choose_from_most_used' => __( 'Escoger de los modelo utilizados' ),
-    'menu_name' => __( 'modelo' ),
+    'menu_name' => __( 'Modelo' ),
   ); 
   register_taxonomy('modelo','aplicacion',array(
     'hierarchical' => false,
@@ -905,7 +905,7 @@ function ano_taxonomy() {
     'separate_items_with_commas' => __( '' ),
     'add_or_remove_items' => __( 'Agregar o Quitar años' ),
     'choose_from_most_used' => __( 'Escoger de los año utilizados' ),
-    'menu_name' => __( 'año' ),
+    'menu_name' => __( 'Año' ),
   ); 
   register_taxonomy('año','aplicacion',array(
     'hierarchical' => false,
@@ -1108,7 +1108,7 @@ function caja_taxonomy() {
     'separate_items_with_commas' => __( '' ),
     'add_or_remove_items' => __( 'Agregar o Quitar caja' ),
     'choose_from_most_used' => __( 'Escoger de los caja utilizados' ),
-    'menu_name' => __( 'caja' ),
+    'menu_name' => __( 'Caja' ),
   ); 
   register_taxonomy('caja','aplicacion',array(
     'hierarchical' => false,
@@ -1143,7 +1143,7 @@ function transmision_taxonomy() {
     'separate_items_with_commas' => __( '' ),
     'add_or_remove_items' => __( 'Agregar o Quitar transmision' ),
     'choose_from_most_used' => __( 'Escoger de los transmision utilizados' ),
-    'menu_name' => __( 'transmision' ),
+    'menu_name' => __( 'Transmisión' ),
   ); 
   register_taxonomy('transmision','aplicacion',array(
     'hierarchical' => false,
@@ -1177,7 +1177,7 @@ function postarticulos(){
    'menu_position'=>4,
    'capability_type'=> 'page',
    'supports'=> array( 'title', 'excerpt'),
-  'taxonomies' => array( 'codigo', 'nombre', 'grupo', 'precio', 'existencia', 'aplicacion', 'datos', 'OEM', 'codalt1', 'codalt2', 'codlat3', 'codlat4', 'procedencia', 'condicion', 'fob', 'especificacion', 'factor', 'foto1', 'foto2', 'costo' ),
+  'taxonomies' => array( 'codigo', 'nombre', 'grupo', 'precio', 'existencia', 'aplicacion', 'datos', 'oem', 'codalt1', 'codalt2', 'codlat3', 'codlat4', 'procedencia', 'condicion', 'fob', 'especificacion', 'factor', 'foto1', 'foto2', 'costo' ),
    'query_var'=>true,
   );
   register_post_type( "articulos", $args );
