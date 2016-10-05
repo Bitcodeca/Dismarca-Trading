@@ -165,7 +165,7 @@ function codigo_taxonomy() {
     'choose_from_most_used' => __( 'Escoger de los codigos utilizados' ),
     'menu_name' => __( 'codigo' ),
   ); 
-  register_taxonomy('codigo','productos',array(
+  register_taxonomy('codigo', array('productos','aplicacion'),array(
     'hierarchical' => false,
     'labels' => $labels,
     'show_ui' => true,
@@ -198,7 +198,7 @@ function nombre_taxonomy() {
     'choose_from_most_used' => __( 'Escoger de los nombres utilizados' ),
     'menu_name' => __( 'nombre' ),
   ); 
-  register_taxonomy('nombre','productos',array(
+  register_taxonomy('nombre', array('productos','aplicacion'),array(
     'hierarchical' => false,
     'labels' => $labels,
     'show_ui' => true,
