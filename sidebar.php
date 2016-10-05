@@ -28,6 +28,13 @@
 					echo '<option value="'.$i.'">'.$i.'</option>';
 				} ?>
 			</select>
+			<select class="btn sidebar-option letra2" id="grupo" name="grupo">
+				<option value="" hidden>Grupo</option>
+				<?php $grupo = get_terms( 'grupo', array( 'orderby' => 'name', 'hide_empty' => 1 ) );
+				foreach ($grupo as $i) {
+				 	echo '<option value="'.$i->slug.'">'.$i->name.'</option>';
+				 } ?>
+			</select>
 		</div>
 		<button class="btn btn-buscar fondorojo margintop10" type="submit" name="filtrar" id="filtrar">Buscar</button>
 	</form>

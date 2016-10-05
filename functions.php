@@ -143,42 +143,9 @@ function movie_tax_query($query) {
 }
 
 
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//////////////////////////////// TAXONOMIA TAMANO ///////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-add_action( 'init', 'tamaño_taxonomy', 0 );
-function tamaño_taxonomy() {
-  $labels = array(
-    'name' => _x( 'tamaño', 'taxonomy general name' ),
-    'singular_name' => _x( 'tamaño', 'taxonomy singular name' ),
-    'search_items' =>  __( 'Buscar tamaño' ),
-    'popular_items' => __( 'tamaño frecuentes' ),
-    'all_items' => __( 'Todos los tamaño' ),
-    'parent_item' => null,
-    'parent_item_colon' => null,
-    'edit_item' => __( 'Editar tamaño' ), 
-    'update_item' => __( 'Actualizar tamaño' ),
-    'add_new_item' => __( 'Agregar nuevo tamaño' ),
-    'new_item_name' => __( 'Cantidad de nuevo tamaño' ),
-    'separate_items_with_commas' => __( '' ),
-    'add_or_remove_items' => __( 'Agregar o Quitar tamaño' ),
-    'choose_from_most_used' => __( 'Escoger de los tamaños utilizados' ),
-    'menu_name' => __( 'tamaño' ),
-  ); 
-  register_taxonomy('tamaño','post',array(
-    'hierarchical' => false,
-    'labels' => $labels,
-    'show_ui' => true,
-    'show_admin_column' => true,
-    'update_count_callback' => '_update_post_term_count',
-    'query_var' => true,
-    'rewrite' => array( 'slug' => 'tamaño' ),
-  ));
-}
-
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//////////////////////////////// TAXONOMIA CODIGO ///////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////// TAXONOMIA CODIGO /////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
 add_action( 'init', 'codigo_taxonomy', 0 );
 function codigo_taxonomy() {
   $labels = array(
@@ -198,7 +165,7 @@ function codigo_taxonomy() {
     'choose_from_most_used' => __( 'Escoger de los codigos utilizados' ),
     'menu_name' => __( 'codigo' ),
   ); 
-  register_taxonomy('codigo','aplicacion',array(
+  register_taxonomy('codigo','productos',array(
     'hierarchical' => false,
     'labels' => $labels,
     'show_ui' => true,
@@ -209,9 +176,43 @@ function codigo_taxonomy() {
   ));
 }
 
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//////////////////////////////// TAXONOMIA GRUPO ///////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////// TAXONOMIA NOMBRE ////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+add_action( 'init', 'nombre_taxonomy', 0 );
+function nombre_taxonomy() {
+  $labels = array(
+    'name' => _x( 'Nombre', 'taxonomy general name' ),
+    'singular_name' => _x( 'nombre', 'taxonomy singular name' ),
+    'search_items' =>  __( 'Buscar nombre' ),
+    'popular_items' => __( 'nombres frecuentes' ),
+    'all_items' => __( 'Todos los nombres' ),
+    'parent_item' => null,
+    'parent_item_colon' => null,
+    'edit_item' => __( 'Editar nombre' ), 
+    'update_item' => __( 'Actualizar nombre' ),
+    'add_new_item' => __( 'Agregar nuevo nombre' ),
+    'new_item_name' => __( 'Cantidad de nuevos nombres' ),
+    'separate_items_with_commas' => __( '' ),
+    'add_or_remove_items' => __( 'Agregar o Quitar nombre' ),
+    'choose_from_most_used' => __( 'Escoger de los nombres utilizados' ),
+    'menu_name' => __( 'nombre' ),
+  ); 
+  register_taxonomy('nombre','productos',array(
+    'hierarchical' => false,
+    'labels' => $labels,
+    'show_ui' => true,
+    'show_admin_column' => true,
+    'update_count_callback' => '_update_post_term_count',
+    'query_var' => true,
+    'rewrite' => array( 'slug' => 'nombre' ),
+  ));
+}
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////// TAXONOMIA GRUPO ////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
 add_action( 'init', 'grupo_taxonomy', 0 );
 function grupo_taxonomy() {
   $labels = array(
@@ -242,9 +243,9 @@ function grupo_taxonomy() {
   ));
 }
 
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//////////////////////////////// TAXONOMIA EXISTENCIA ///////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////// TAXONOMIA EXISTENCIA /////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////
 add_action( 'init', 'existencia_taxonomy', 0 );
 function existencia_taxonomy() {
   $labels = array(
@@ -275,204 +276,138 @@ function existencia_taxonomy() {
   ));
 }
 
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//////////////////////////////// TAXONOMIA APLICACION 1 ///////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-add_action( 'init', 'aplicacion1_taxonomy', 0 );
-function aplicacion1_taxonomy() {
-  $labels = array(
-    'name' => _x( 'aplicacion1', 'taxonomy general name' ),
-    'singular_name' => _x( 'aplicacion1', 'taxonomy singular name' ),
-    'search_items' =>  __( 'Buscar aplicacion1' ),
-    'popular_items' => __( 'aplicacion1 frecuentes' ),
-    'all_items' => __( 'Todos los aplicacion1' ),
-    'parent_item' => null,
-    'parent_item_colon' => null,
-    'edit_item' => __( 'Editar aplicacion1' ), 
-    'update_item' => __( 'Actualizar aplicacion1' ),
-    'add_new_item' => __( 'Agregar nueva aplicacion1' ),
-    'new_item_name' => __( 'Cantidad de nuevo aplicacion1' ),
-    'separate_items_with_commas' => __( '' ),
-    'add_or_remove_items' => __( 'Agregar o Quitar aplicacion1' ),
-    'choose_from_most_used' => __( 'Escoger de los aplicacion1 utilizados' ),
-    'menu_name' => __( 'aplicacion1' ),
-  ); 
-  register_taxonomy('aplicacion1','productos',array(
-    'hierarchical' => false,
-    'labels' => $labels,
-    'show_ui' => true,
-    'show_admin_column' => true,
-    'update_count_callback' => '_update_post_term_count',
-    'query_var' => true,
-    'rewrite' => array( 'slug' => 'aplicacion1' ),
-  ));
-}
-
-
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//////////////////////////////// TAXONOMIA APLICACION 2 ///////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-add_action( 'init', 'aplicacion2_taxonomy', 0 );
-function aplicacion2_taxonomy() {
-  $labels = array(
-    'name' => _x( 'aplicacion2', 'taxonomy general name' ),
-    'singular_name' => _x( 'aplicacion2', 'taxonomy singular name' ),
-    'search_items' =>  __( 'Buscar aplicacion2' ),
-    'popular_items' => __( 'aplicacion2 frecuentes' ),
-    'all_items' => __( 'Todos los aplicacion2' ),
-    'parent_item' => null,
-    'parent_item_colon' => null,
-    'edit_item' => __( 'Editar aplicacion2' ), 
-    'update_item' => __( 'Actualizar aplicacion2' ),
-    'add_new_item' => __( 'Agregar nueva aplicacion2' ),
-    'new_item_name' => __( 'Cantidad de nuevo aplicacion2' ),
-    'separate_items_with_commas' => __( '' ),
-    'add_or_remove_items' => __( 'Agregar o Quitar aplicacion2' ),
-    'choose_from_most_used' => __( 'Escoger de los aplicacion2 utilizados' ),
-    'menu_name' => __( 'aplicacion2' ),
-  ); 
-  register_taxonomy('aplicacion2','productos',array(
-    'hierarchical' => false,
-    'labels' => $labels,
-    'show_ui' => true,
-    'show_admin_column' => true,
-    'update_count_callback' => '_update_post_term_count',
-    'query_var' => true,
-    'rewrite' => array( 'slug' => 'aplicacion2' ),
-  ));
-}
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
-/////////////////////////// TAXONOMIA PRECIOA ////////////////////////////////////////////////////
+/////////////////////////// TAXONOMIA PRECIO ////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////
-add_action( 'init', 'precioa_taxonomy', 0 );
-function precioa_taxonomy() {
+add_action( 'init', 'precio_taxonomy', 0 );
+function precio_taxonomy() {
   $labels = array(
-    'name' => _x( 'precioa', 'taxonomy general name' ),
-    'singular_name' => _x( 'precioa', 'taxonomy singular name' ),
-    'search_items' =>  __( 'Buscar precioa' ),
-    'popular_items' => __( 'precioa frecuentes' ),
-    'all_items' => __( 'Todas los Costos' ),
+    'name' => _x( 'precio', 'taxonomy general name' ),
+    'singular_name' => _x( 'precio', 'taxonomy singular name' ),
+    'search_items' =>  __( 'Buscar precio' ),
+    'popular_items' => __( 'precio frecuentes' ),
+    'all_items' => __( 'Todos los precios' ),
     'parent_item' => null,
     'parent_item_colon' => null,
-    'edit_item' => __( 'Editar precioa' ), 
-    'update_item' => __( 'Actualizar precioa' ),
-    'add_new_item' => __( 'Agregar nuevo precioa' ),
-    'new_item_name' => __( 'Cantidad de nuevo precioa' ),
+    'edit_item' => __( 'Editar precio' ), 
+    'update_item' => __( 'Actualizar precio' ),
+    'add_new_item' => __( 'Agregar nuevo precio' ),
+    'new_item_name' => __( 'Cantidad de nuevo precio' ),
     'separate_items_with_commas' => __( '' ),
-    'add_or_remove_items' => __( 'Agregar o Quitar precioa' ),
-    'choose_from_most_used' => __( 'Escoger de los cosotos utilizados' ),
-    'menu_name' => __( 'precioa' ),
+    'add_or_remove_items' => __( 'Agregar o Quitar precio' ),
+    'choose_from_most_used' => __( 'Escoger de los precios utilizados' ),
+    'menu_name' => __( 'Precio' ),
   ); 
-  register_taxonomy('precioa','productos',array(
+  register_taxonomy('precio','productos',array(
     'hierarchical' => false,
     'labels' => $labels,
     'show_ui' => true,
     'show_admin_column' => true,
     'update_count_callback' => '_update_post_term_count',
     'query_var' => true,
-    'rewrite' => array( 'slug' => 'precioa' ),
+    'rewrite' => array( 'slug' => 'precio' ),
   ));
 }
 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
-/////////////////////////// TAXONOMIA PRECIOB ////////////////////////////////////////////////////
+/////////////////////////// TAXONOMIA APLICACIÓN ////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////
-add_action( 'init', 'preciob_taxonomy', 0 );
-function preciob_taxonomy() {
+add_action( 'init', 'aplicacion_taxonomy', 0 );
+function aplicacion_taxonomy() {
   $labels = array(
-    'name' => _x( 'preciob', 'taxonomy general name' ),
-    'singular_name' => _x( 'preciob', 'taxonomy singular name' ),
-    'search_items' =>  __( 'Buscar preciob' ),
-    'popular_items' => __( 'preciob frecuentes' ),
-    'all_items' => __( 'Todas los Costos' ),
+    'name' => _x( 'Aplicación', 'taxonomy general name' ),
+    'singular_name' => _x( 'Aplicación', 'taxonomy singular name' ),
+    'search_items' =>  __( 'Buscar aplicaciones' ),
+    'popular_items' => __( 'aplicaciones frecuentes' ),
+    'all_items' => __( 'Todas las aplicaciones' ),
     'parent_item' => null,
     'parent_item_colon' => null,
-    'edit_item' => __( 'Editar preciob' ), 
-    'update_item' => __( 'Actualizar preciob' ),
-    'add_new_item' => __( 'Agregar nuevo preciob' ),
-    'new_item_name' => __( 'Cantidad de nuevo preciob' ),
+    'edit_item' => __( 'Editar aplicación' ), 
+    'update_item' => __( 'Actualizar aplicación' ),
+    'add_new_item' => __( 'Agregar nuevo aplicación' ),
+    'new_item_name' => __( 'Cantidad de nuevas aplicaciones' ),
     'separate_items_with_commas' => __( '' ),
-    'add_or_remove_items' => __( 'Agregar o Quitar preciob' ),
-    'choose_from_most_used' => __( 'Escoger de los cosotos utilizados' ),
-    'menu_name' => __( 'preciob' ),
+    'add_or_remove_items' => __( 'Agregar o Quitar aplicaciones' ),
+    'choose_from_most_used' => __( 'Escoger de los aplicaciones utilizados' ),
+    'menu_name' => __( 'Aplicación' ),
   ); 
-  register_taxonomy('preciob','productos',array(
+  register_taxonomy('aplicacion','productos',array(
     'hierarchical' => false,
     'labels' => $labels,
     'show_ui' => true,
     'show_admin_column' => true,
     'update_count_callback' => '_update_post_term_count',
     'query_var' => true,
-    'rewrite' => array( 'slug' => 'preciob' ),
+    'rewrite' => array( 'slug' => 'aplicacion' ),
   ));
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
-/////////////////////////// TAXONOMIA PRECIOC ////////////////////////////////////////////////////
+/////////////////////////// TAXONOMIA DATOS ////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////
-add_action( 'init', 'precioc_taxonomy', 0 );
-function precioc_taxonomy() {
+add_action( 'init', 'datos_taxonomy', 0 );
+function datos_taxonomy() {
   $labels = array(
-    'name' => _x( 'precioc', 'taxonomy general name' ),
-    'singular_name' => _x( 'precioc', 'taxonomy singular name' ),
-    'search_items' =>  __( 'Buscar precioc' ),
-    'popular_items' => __( 'precioc frecuentes' ),
-    'all_items' => __( 'Todas los Costos' ),
+    'name' => _x( 'Datos', 'taxonomy general name' ),
+    'singular_name' => _x( 'Dato', 'taxonomy singular name' ),
+    'search_items' =>  __( 'Buscar datos' ),
+    'popular_items' => __( 'Datos frecuentes' ),
+    'all_items' => __( 'Todas los datos' ),
     'parent_item' => null,
     'parent_item_colon' => null,
-    'edit_item' => __( 'Editar precioc' ), 
-    'update_item' => __( 'Actualizar precioc' ),
-    'add_new_item' => __( 'Agregar nuevo precioc' ),
-    'new_item_name' => __( 'Cantidad de nuevo precioc' ),
+    'edit_item' => __( 'Editar dato' ), 
+    'update_item' => __( 'Actualizar dato' ),
+    'add_new_item' => __( 'Agregar nuevo dato' ),
+    'new_item_name' => __( 'Cantidad de nuevos datos' ),
     'separate_items_with_commas' => __( '' ),
-    'add_or_remove_items' => __( 'Agregar o Quitar precioc' ),
-    'choose_from_most_used' => __( 'Escoger de los cosotos utilizados' ),
-    'menu_name' => __( 'precioc' ),
+    'add_or_remove_items' => __( 'Agregar o Quitar datos' ),
+    'choose_from_most_used' => __( 'Escoger de los datos utilizados' ),
+    'menu_name' => __( 'Datos' ),
   ); 
-  register_taxonomy('precioc','productos',array(
+  register_taxonomy('datos','productos',array(
     'hierarchical' => false,
     'labels' => $labels,
     'show_ui' => true,
     'show_admin_column' => true,
     'update_count_callback' => '_update_post_term_count',
     'query_var' => true,
-    'rewrite' => array( 'slug' => 'precioc' ),
+    'rewrite' => array( 'slug' => 'datos' ),
   ));
 }
 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
-/////////////////////////// TAXONOMIA PRECIOD ////////////////////////////////////////////////////
+/////////////////////////// TAXONOMIA OEM ////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////
-add_action( 'init', 'preciod_taxonomy', 0 );
-function preciod_taxonomy() {
+add_action( 'init', 'OEM_taxonomy', 0 );
+function OEM_taxonomy() {
   $labels = array(
-    'name' => _x( 'preciod', 'taxonomy general name' ),
-    'singular_name' => _x( 'preciod', 'taxonomy singular name' ),
-    'search_items' =>  __( 'Buscar preciod' ),
-    'popular_items' => __( 'preciod frecuentes' ),
-    'all_items' => __( 'Todas los Costos' ),
+    'name' => _x( 'OEM', 'taxonomy general name' ),
+    'singular_name' => _x( 'OEM', 'taxonomy singular name' ),
+    'search_items' =>  __( 'Buscar OEM' ),
+    'popular_items' => __( 'OEM frecuentes' ),
+    'all_items' => __( 'Todas los OEM' ),
     'parent_item' => null,
     'parent_item_colon' => null,
-    'edit_item' => __( 'Editar preciod' ), 
-    'update_item' => __( 'Actualizar preciod' ),
-    'add_new_item' => __( 'Agregar nuevo preciod' ),
-    'new_item_name' => __( 'Cantidad de nuevo preciod' ),
+    'edit_item' => __( 'Editar OEM' ), 
+    'update_item' => __( 'Actualizar OEM' ),
+    'add_new_item' => __( 'Agregar nuevo OEM' ),
+    'new_item_name' => __( 'Cantidad de nuevos OEM' ),
     'separate_items_with_commas' => __( '' ),
-    'add_or_remove_items' => __( 'Agregar o Quitar preciod' ),
-    'choose_from_most_used' => __( 'Escoger de los cosotos utilizados' ),
-    'menu_name' => __( 'preciod' ),
+    'add_or_remove_items' => __( 'Agregar o Quitar OEM' ),
+    'choose_from_most_used' => __( 'Escoger de los OEM utilizados' ),
+    'menu_name' => __( 'OEM' ),
   ); 
-  register_taxonomy('preciod','productos',array(
+  register_taxonomy('OEM','productos',array(
     'hierarchical' => false,
     'labels' => $labels,
     'show_ui' => true,
     'show_admin_column' => true,
     'update_count_callback' => '_update_post_term_count',
     'query_var' => true,
-    'rewrite' => array( 'slug' => 'preciod' ),
+    'rewrite' => array( 'slug' => 'OEM' ),
   ));
 }
 
@@ -612,71 +547,6 @@ function codalt4_taxonomy() {
 }
 
 
-/////////////////////////////////////////////////////////////////////////////////////////////////
-/////////////////////////// TAXONOMIA CODALT5 ////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////////////////
-add_action( 'init', 'codalt5_taxonomy', 0 );
-function codalt5_taxonomy() {
-  $labels = array(
-    'name' => _x( 'codalt5', 'taxonomy general name' ),
-    'singular_name' => _x( 'codalt5', 'taxonomy singular name' ),
-    'search_items' =>  __( 'Buscar codalt5' ),
-    'popular_items' => __( 'codalt5 frecuentes' ),
-    'all_items' => __( 'Todas los Costos' ),
-    'parent_item' => null,
-    'parent_item_colon' => null,
-    'edit_item' => __( 'Editar codalt5' ), 
-    'update_item' => __( 'Actualizar codalt5' ),
-    'add_new_item' => __( 'Agregar nuevo codalt5' ),
-    'new_item_name' => __( 'Cantidad de nuevo codalt5' ),
-    'separate_items_with_commas' => __( '' ),
-    'add_or_remove_items' => __( 'Agregar o Quitar codalt5' ),
-    'choose_from_most_used' => __( 'Escoger de los cosotos utilizados' ),
-    'menu_name' => __( 'codalt5' ),
-  ); 
-  register_taxonomy('codalt5','productos',array(
-    'hierarchical' => false,
-    'labels' => $labels,
-    'show_ui' => true,
-    'show_admin_column' => true,
-    'update_count_callback' => '_update_post_term_count',
-    'query_var' => true,
-    'rewrite' => array( 'slug' => 'codalt5' ),
-  ));
-}
-
-/////////////////////////////////////////////////////////////////////////////////////////////////
-/////////////////////////// TAXONOMIA PRESENTACION ////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////////////////
-add_action( 'init', 'presentacion_taxonomy', 0 );
-function presentacion_taxonomy() {
-  $labels = array(
-    'name' => _x( 'presentacion', 'taxonomy general name' ),
-    'singular_name' => _x( 'presentacion', 'taxonomy singular name' ),
-    'search_items' =>  __( 'Buscar presentacion' ),
-    'popular_items' => __( 'presentacion frecuentes' ),
-    'all_items' => __( 'Todas los Costos' ),
-    'parent_item' => null,
-    'parent_item_colon' => null,
-    'edit_item' => __( 'Editar presentacion' ), 
-    'update_item' => __( 'Actualizar presentacion' ),
-    'add_new_item' => __( 'Agregar nuevo presentacion' ),
-    'new_item_name' => __( 'Cantidad de nuevo presentacion' ),
-    'separate_items_with_commas' => __( '' ),
-    'add_or_remove_items' => __( 'Agregar o Quitar presentacion' ),
-    'choose_from_most_used' => __( 'Escoger de los cosotos utilizados' ),
-    'menu_name' => __( 'presentacion' ),
-  ); 
-  register_taxonomy('presentacion','productos',array(
-    'hierarchical' => false,
-    'labels' => $labels,
-    'show_ui' => true,
-    'show_admin_column' => true,
-    'update_count_callback' => '_update_post_term_count',
-    'query_var' => true,
-    'rewrite' => array( 'slug' => 'presentacion' ),
-  ));
-}
 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
@@ -713,40 +583,244 @@ function procedencia_taxonomy() {
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
-/////////////////////////// TAXONOMIA FABRICACION ////////////////////////////////////////////////////
+/////////////////////////// TAXONOMIA CONDICION ////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////
-add_action( 'init', 'fabricacion_taxonomy', 0 );
-function fabricacion_taxonomy() {
+add_action( 'init', 'condicion_taxonomy', 0 );
+function condicion_taxonomy() {
   $labels = array(
-    'name' => _x( 'fabricacion', 'taxonomy general name' ),
-    'singular_name' => _x( 'fabricacion', 'taxonomy singular name' ),
-    'search_items' =>  __( 'Buscar fabricacion' ),
-    'popular_items' => __( 'fabricacion frecuentes' ),
-    'all_items' => __( 'Todas los Costos' ),
+    'name' => _x( 'Condición', 'taxonomy general name' ),
+    'singular_name' => _x( 'Condición', 'taxonomy singular name' ),
+    'search_items' =>  __( 'Buscar condiciones' ),
+    'popular_items' => __( 'Condiciones frecuentes' ),
+    'all_items' => __( 'Todas las condiciones' ),
     'parent_item' => null,
     'parent_item_colon' => null,
-    'edit_item' => __( 'Editar fabricacion' ), 
-    'update_item' => __( 'Actualizar fabricacion' ),
-    'add_new_item' => __( 'Agregar nuevo fabricacion' ),
-    'new_item_name' => __( 'Cantidad de nuevo fabricacion' ),
+    'edit_item' => __( 'Editar condiciones' ), 
+    'update_item' => __( 'Actualizar condiciones' ),
+    'add_new_item' => __( 'Agregar nueva condición' ),
+    'new_item_name' => __( 'Cantidad de nueva condición' ),
     'separate_items_with_commas' => __( '' ),
-    'add_or_remove_items' => __( 'Agregar o Quitar fabricacion' ),
-    'choose_from_most_used' => __( 'Escoger de los cosotos utilizados' ),
-    'menu_name' => __( 'fabricacion' ),
+    'add_or_remove_items' => __( 'Agregar o Quitar condición' ),
+    'choose_from_most_used' => __( 'Escoger de las condiciones utilizadas' ),
+    'menu_name' => __( 'Condición' ),
   ); 
-  register_taxonomy('fabricacion','productos',array(
+  register_taxonomy('condicion','productos',array(
     'hierarchical' => false,
     'labels' => $labels,
     'show_ui' => true,
     'show_admin_column' => true,
     'update_count_callback' => '_update_post_term_count',
     'query_var' => true,
-    'rewrite' => array( 'slug' => 'fabricacion' ),
+    'rewrite' => array( 'slug' => 'condicion' ),
   ));
 }
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////// TAXONOMIA MARCA ///////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////// TAXONOMIA FOB ////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////
+add_action( 'init', 'FOB_taxonomy', 0 );
+function FOB_taxonomy() {
+  $labels = array(
+    'name' => _x( 'FOB', 'taxonomy general name' ),
+    'singular_name' => _x( 'FOB', 'taxonomy singular name' ),
+    'search_items' =>  __( 'Buscar FOB' ),
+    'popular_items' => __( 'FOB frecuentes' ),
+    'all_items' => __( 'Todas las FOB' ),
+    'parent_item' => null,
+    'parent_item_colon' => null,
+    'edit_item' => __( 'Editar FOB' ), 
+    'update_item' => __( 'Actualizar FOB' ),
+    'add_new_item' => __( 'Agregar nueva FOB' ),
+    'new_item_name' => __( 'Cantidad de nueva FOB' ),
+    'separate_items_with_commas' => __( '' ),
+    'add_or_remove_items' => __( 'Agregar o Quitar FOB' ),
+    'choose_from_most_used' => __( 'Escoger de las FOB utilizadas' ),
+    'menu_name' => __( 'FOB' ),
+  ); 
+  register_taxonomy('fob','productos',array(
+    'hierarchical' => false,
+    'labels' => $labels,
+    'show_ui' => true,
+    'show_admin_column' => true,
+    'update_count_callback' => '_update_post_term_count',
+    'query_var' => true,
+    'rewrite' => array( 'slug' => 'fob' ),
+  ));
+}
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////// TAXONOMIA ESPECIFICACIÓN ////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////
+add_action( 'init', 'especificacion_taxonomy', 0 );
+function especificacion_taxonomy() {
+  $labels = array(
+    'name' => _x( 'Especificación', 'taxonomy general name' ),
+    'singular_name' => _x( 'Especificación', 'taxonomy singular name' ),
+    'search_items' =>  __( 'Buscar especificación' ),
+    'popular_items' => __( 'Especificaciones frecuentes' ),
+    'all_items' => __( 'Todas las especificaciones' ),
+    'parent_item' => null,
+    'parent_item_colon' => null,
+    'edit_item' => __( 'Editar especificación' ), 
+    'update_item' => __( 'Actualizar especificación' ),
+    'add_new_item' => __( 'Agregar nueva especificación' ),
+    'new_item_name' => __( 'Cantidad de nueva especificación' ),
+    'separate_items_with_commas' => __( '' ),
+    'add_or_remove_items' => __( 'Agregar o Quitar especificación' ),
+    'choose_from_most_used' => __( 'Escoger de las especificaciones utilizadas' ),
+    'menu_name' => __( 'FOB' ),
+  ); 
+  register_taxonomy('especificacion','productos',array(
+    'hierarchical' => false,
+    'labels' => $labels,
+    'show_ui' => true,
+    'show_admin_column' => true,
+    'update_count_callback' => '_update_post_term_count',
+    'query_var' => true,
+    'rewrite' => array( 'slug' => 'especificacion' ),
+  ));
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////// TAXONOMIA FACTOR ////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////
+add_action( 'init', 'factor_taxonomy', 0 );
+function factor_taxonomy() {
+  $labels = array(
+    'name' => _x( 'Factor', 'taxonomy general name' ),
+    'singular_name' => _x( 'Factor', 'taxonomy singular name' ),
+    'search_items' =>  __( 'Buscar factor' ),
+    'popular_items' => __( 'Factores frecuentes' ),
+    'all_items' => __( 'Todos los factores' ),
+    'parent_item' => null,
+    'parent_item_colon' => null,
+    'edit_item' => __( 'Editar factor' ), 
+    'update_item' => __( 'Actualizar factor' ),
+    'add_new_item' => __( 'Agregar nuevo factor' ),
+    'new_item_name' => __( 'Cantidad de nuevo factor' ),
+    'separate_items_with_commas' => __( '' ),
+    'add_or_remove_items' => __( 'Agregar o Quitar factor' ),
+    'choose_from_most_used' => __( 'Escoger de los factor utilizados' ),
+    'menu_name' => __( 'factor' ),
+  ); 
+  register_taxonomy('factor','productos',array(
+    'hierarchical' => false,
+    'labels' => $labels,
+    'show_ui' => true,
+    'show_admin_column' => true,
+    'update_count_callback' => '_update_post_term_count',
+    'query_var' => true,
+    'rewrite' => array( 'slug' => 'factor' ),
+  ));
+}
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////// TAXONOMIA FOTO1 ////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////
+add_action( 'init', 'foto1_taxonomy', 0 );
+function foto1_taxonomy() {
+  $labels = array(
+    'name' => _x( 'Foto 1', 'taxonomy general name' ),
+    'singular_name' => _x( 'Foto 1', 'taxonomy singular name' ),
+    'search_items' =>  __( 'Buscar Foto 1' ),
+    'popular_items' => __( 'Foto 1 frecuentes' ),
+    'all_items' => __( 'Todos las Foto 1' ),
+    'parent_item' => null,
+    'parent_item_colon' => null,
+    'edit_item' => __( 'Editar Foto 1' ), 
+    'update_item' => __( 'Actualizar Foto 1' ),
+    'add_new_item' => __( 'Agregar nueva Foto 1' ),
+    'new_item_name' => __( 'Cantidad de nuevo Foto 1' ),
+    'separate_items_with_commas' => __( '' ),
+    'add_or_remove_items' => __( 'Agregar o Quitar Foto 1' ),
+    'choose_from_most_used' => __( 'Escoger de los Foto 1 utilizados' ),
+    'menu_name' => __( 'Foto 1' ),
+  ); 
+  register_taxonomy('foto1','productos',array(
+    'hierarchical' => false,
+    'labels' => $labels,
+    'show_ui' => true,
+    'show_admin_column' => true,
+    'update_count_callback' => '_update_post_term_count',
+    'query_var' => true,
+    'rewrite' => array( 'slug' => 'foto1' ),
+  ));
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////// TAXONOMIA FOTO2 ////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////
+add_action( 'init', 'foto2_taxonomy', 0 );
+function foto2_taxonomy() {
+  $labels = array(
+    'name' => _x( 'Foto 2', 'taxonomy general name' ),
+    'singular_name' => _x( 'Foto 2', 'taxonomy singular name' ),
+    'search_items' =>  __( 'Buscar Foto 2' ),
+    'popular_items' => __( 'Foto 2 frecuentes' ),
+    'all_items' => __( 'Todos las Foto 2' ),
+    'parent_item' => null,
+    'parent_item_colon' => null,
+    'edit_item' => __( 'Editar Foto 2' ), 
+    'update_item' => __( 'Actualizar Foto 2' ),
+    'add_new_item' => __( 'Agregar nueva Foto 2' ),
+    'new_item_name' => __( 'Cantidad de nuevo Foto 2' ),
+    'separate_items_with_commas' => __( '' ),
+    'add_or_remove_items' => __( 'Agregar o Quitar Foto 2' ),
+    'choose_from_most_used' => __( 'Escoger de los Foto 2 utilizados' ),
+    'menu_name' => __( 'Foto 2' ),
+  ); 
+  register_taxonomy('foto2','productos',array(
+    'hierarchical' => false,
+    'labels' => $labels,
+    'show_ui' => true,
+    'show_admin_column' => true,
+    'update_count_callback' => '_update_post_term_count',
+    'query_var' => true,
+    'rewrite' => array( 'slug' => 'foto2' ),
+  ));
+}
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////// TAXONOMIA COSTO ////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////
+add_action( 'init', 'costo_taxonomy', 0 );
+function costo_taxonomy() {
+  $labels = array(
+    'name' => _x( 'Costo', 'taxonomy general name' ),
+    'singular_name' => _x( 'Costo', 'taxonomy singular name' ),
+    'search_items' =>  __( 'Buscar costo' ),
+    'popular_items' => __( 'Costos frecuentes' ),
+    'all_items' => __( 'Todos los costos' ),
+    'parent_item' => null,
+    'parent_item_colon' => null,
+    'edit_item' => __( 'Editar costos' ), 
+    'update_item' => __( 'Actualizar costos' ),
+    'add_new_item' => __( 'Agregar nuevo costo' ),
+    'new_item_name' => __( 'Cantidad de nuevo costo' ),
+    'separate_items_with_commas' => __( '' ),
+    'add_or_remove_items' => __( 'Agregar o Quitar costo' ),
+    'choose_from_most_used' => __( 'Escoger de los costos utilizados' ),
+    'menu_name' => __( 'Costo' ),
+  ); 
+  register_taxonomy('costo','productos',array(
+    'hierarchical' => false,
+    'labels' => $labels,
+    'show_ui' => true,
+    'show_admin_column' => true,
+    'update_count_callback' => '_update_post_term_count',
+    'query_var' => true,
+    'rewrite' => array( 'slug' => 'costo' ),
+  ));
+}
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////// TAXONOMIA MARCA ///////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////
 add_action( 'init', 'marca_taxonomy', 0 );
 function marca_taxonomy() {
   $labels = array(
@@ -777,9 +851,9 @@ function marca_taxonomy() {
   ));
 }
 
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-////////////////////////// TAXONOMIA MODELO //////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////// TAXONOMIA MODELO /////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////
 add_action( 'init', 'modelo_taxonomy', 0 );
 function modelo_taxonomy() {
   $labels = array(
@@ -811,9 +885,9 @@ function modelo_taxonomy() {
 }
 
 
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////// TAXONOMIA AÑO //////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////// TAXONOMIA AÑO ///////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
 add_action( 'init', 'ano_taxonomy', 0 );
 function ano_taxonomy() {
   $labels = array(
@@ -845,9 +919,9 @@ function ano_taxonomy() {
 }
 
 
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////// TAXONOMIA MOTOR //////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////// TAXONOMIA MOTOR //////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
 add_action( 'init', 'motor_taxonomy', 0 );
 function motor_taxonomy() {
   $labels = array(
@@ -878,9 +952,9 @@ function motor_taxonomy() {
   ));
 }
 
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////// TAXONOMIA CILINDROS //////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////// TAXONOMIA CILINDROS ///////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
 add_action( 'init', 'cilindros_taxonomy', 0 );
 function cilindros_taxonomy() {
   $labels = array(
@@ -912,9 +986,111 @@ function cilindros_taxonomy() {
 }
 
 
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////// TAXONOMIA CAJA //////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////// TAXONOMIA ESTILO ////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+add_action( 'init', 'estilo_taxonomy', 0 );
+function estilo_taxonomy() {
+  $labels = array(
+    'name' => _x( 'estilo', 'taxonomy general name' ),
+    'singular_name' => _x( 'estilo', 'taxonomy singular name' ),
+    'search_items' =>  __( 'Buscar estilo' ),
+    'popular_items' => __( 'estilo frecuentes' ),
+    'all_items' => __( 'Todos los estilo' ),
+    'parent_item' => null,
+    'parent_item_colon' => null,
+    'edit_item' => __( 'Editar estilo' ), 
+    'update_item' => __( 'Actualizar estilo' ),
+    'add_new_item' => __( 'Agregar nueva estilo' ),
+    'new_item_name' => __( 'Cantidad de nuevo estilo' ),
+    'separate_items_with_commas' => __( '' ),
+    'add_or_remove_items' => __( 'Agregar o Quitar estilo' ),
+    'choose_from_most_used' => __( 'Escoger de los estilo utilizados' ),
+    'menu_name' => __( 'estilo' ),
+  ); 
+  register_taxonomy('estilo','aplicacion',array(
+    'hierarchical' => false,
+    'labels' => $labels,
+    'show_ui' => true,
+    'show_admin_column' => true,
+    'update_count_callback' => '_update_post_term_count',
+    'query_var' => true,
+    'rewrite' => array( 'slug' => 'estilo' ),
+  ));
+}
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////// TAXONOMIA FABRICANTE //////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+add_action( 'init', 'fabricante_taxonomy', 0 );
+function fabricante_taxonomy() {
+  $labels = array(
+    'name' => _x( 'Fabricante', 'taxonomy general name' ),
+    'singular_name' => _x( 'Fabricante', 'taxonomy singular name' ),
+    'search_items' =>  __( 'Buscar fabricante' ),
+    'popular_items' => __( 'Fabricantes frecuentes' ),
+    'all_items' => __( 'Todos los fabricantes' ),
+    'parent_item' => null,
+    'parent_item_colon' => null,
+    'edit_item' => __( 'Editar fabricante' ), 
+    'update_item' => __( 'Actualizar fabricante' ),
+    'add_new_item' => __( 'Agregar nuevo fabricante' ),
+    'new_item_name' => __( 'Cantidad de nuevo fabricante' ),
+    'separate_items_with_commas' => __( '' ),
+    'add_or_remove_items' => __( 'Agregar o Quitar fabricante' ),
+    'choose_from_most_used' => __( 'Escoger de los fabricante utilizados' ),
+    'menu_name' => __( 'Fabricante' ),
+  ); 
+  register_taxonomy('fabricante','aplicacion',array(
+    'hierarchical' => false,
+    'labels' => $labels,
+    'show_ui' => true,
+    'show_admin_column' => true,
+    'update_count_callback' => '_update_post_term_count',
+    'query_var' => true,
+    'rewrite' => array( 'slug' => 'fabricante' ),
+  ));
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////// TAXONOMIA GRUPO //////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+add_action( 'init', 'grupo_taxonomy', 0 );
+function grupo_taxonomy() {
+  $labels = array(
+    'name' => _x( 'Grupo', 'taxonomy general name' ),
+    'singular_name' => _x( 'Grupo', 'taxonomy singular name' ),
+    'search_items' =>  __( 'Buscar grupo' ),
+    'popular_items' => __( 'Grupos frecuentes' ),
+    'all_items' => __( 'Todos los grupos' ),
+    'parent_item' => null,
+    'parent_item_colon' => null,
+    'edit_item' => __( 'Editar grupo' ), 
+    'update_item' => __( 'Actualizar grupo' ),
+    'add_new_item' => __( 'Agregar nuevo grupo' ),
+    'new_item_name' => __( 'Cantidad de nuevo grupo' ),
+    'separate_items_with_commas' => __( '' ),
+    'add_or_remove_items' => __( 'Agregar o Quitar grupo' ),
+    'choose_from_most_used' => __( 'Escoger de los grupos utilizados' ),
+    'menu_name' => __( 'Grupo' ),
+  ); 
+  register_taxonomy('grupo','aplicacion',array(
+    'hierarchical' => false,
+    'labels' => $labels,
+    'show_ui' => true,
+    'show_admin_column' => true,
+    'update_count_callback' => '_update_post_term_count',
+    'query_var' => true,
+    'rewrite' => array( 'slug' => 'grupo' ),
+  ));
+}
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////// TAXONOMIA CAJA //////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////
 add_action( 'init', 'caja_taxonomy', 0 );
 function caja_taxonomy() {
   $labels = array(
@@ -947,9 +1123,9 @@ function caja_taxonomy() {
 
 
 
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////// TAXONOMIA TRANSMISION //////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////// TAXONOMIA TRANSMISION /////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////
 add_action( 'init', 'transmision_taxonomy', 0 );
 function transmision_taxonomy() {
   $labels = array(
@@ -980,40 +1156,6 @@ function transmision_taxonomy() {
   ));
 }
 
-
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////// TAXONOMIA ESTILO //////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-add_action( 'init', 'estilo_taxonomy', 0 );
-function estilo_taxonomy() {
-  $labels = array(
-    'name' => _x( 'estilo', 'taxonomy general name' ),
-    'singular_name' => _x( 'estilo', 'taxonomy singular name' ),
-    'search_items' =>  __( 'Buscar estilo' ),
-    'popular_items' => __( 'estilo frecuentes' ),
-    'all_items' => __( 'Todos los estilo' ),
-    'parent_item' => null,
-    'parent_item_colon' => null,
-    'edit_item' => __( 'Editar estilo' ), 
-    'update_item' => __( 'Actualizar estilo' ),
-    'add_new_item' => __( 'Agregar nueva estilo' ),
-    'new_item_name' => __( 'Cantidad de nuevo estilo' ),
-    'separate_items_with_commas' => __( '' ),
-    'add_or_remove_items' => __( 'Agregar o Quitar estilo' ),
-    'choose_from_most_used' => __( 'Escoger de los estilo utilizados' ),
-    'menu_name' => __( 'estilo' ),
-  ); 
-  register_taxonomy('estilo','aplicacion',array(
-    'hierarchical' => false,
-    'labels' => $labels,
-    'show_ui' => true,
-    'show_admin_column' => true,
-    'update_count_callback' => '_update_post_term_count',
-    'query_var' => true,
-    'rewrite' => array( 'slug' => 'estilo' ),
-  ));
-}
-
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////// CUSTOM POST ARTICULOS ////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -1021,7 +1163,7 @@ function postarticulos(){
    $args = array(
    'labels'=> array( 'name'=>'articulos',
        'singular_name'=> 'articulos',
-       'menu_name'=>'articulos',
+       'menu_name'=>'Articulos',
        'name_admin_bar'=> 'articulos',
        'all_items' =>'Ver todas las publicaciones',
        'add_new'=> 'Añadir nueva publicación' ),
@@ -1035,7 +1177,7 @@ function postarticulos(){
    'menu_position'=>4,
    'capability_type'=> 'page',
    'supports'=> array( 'title', 'excerpt'),
-  'taxonomies' => array( 'codigo', 'grupo', 'existencia', 'aplicacion1', 'aplicacion2', 'aplicacion3', 'precioa', 'preciob', 'precioc', 'preciod', 'codalt1', 'codalt2', 'codalt3', 'codalt4', 'codalt5', 'presentacion', 'procedencia', 'fabricacion', 'marca' ),
+  'taxonomies' => array( 'codigo', 'nombre', 'grupo', 'precio', 'existencia', 'aplicacion', 'datos', 'OEM', 'codalt1', 'codalt2', 'codlat3', 'codlat4', 'procedencia', 'condicion', 'fob', 'especificacion', 'factor', 'foto1', 'foto2', 'costo' ),
    'query_var'=>true,
   );
   register_post_type( "articulos", $args );
@@ -1049,7 +1191,7 @@ function postaplicacion(){
    $args = array(
    'labels'=> array( 'name'=>'aplicacion',
        'singular_name'=> 'aplicacion',
-       'menu_name'=>'aplicacion',
+       'menu_name'=>'Aplicación',
        'name_admin_bar'=> 'aplicacion',
        'all_items' =>'Ver todas las publicaciones',
        'add_new'=> 'Añadir nueva publicación' ),
@@ -1063,7 +1205,7 @@ function postaplicacion(){
    'menu_position'=>4,
    'capability_type'=> 'page',
    'supports'=> array( 'title'),
-  'taxonomies' => array('title', 'codigo', 'marca', 'modelo', 'año', 'motor', 'cilindros', 'caja', 'transmision', 'estilo'),
+  'taxonomies' => array('codigo', 'marca', 'modelo', 'año', 'motor', 'cilindros', 'estilo', 'fabricante', 'grupo', 'nombre', 'caja', 'transmision'),
    'query_var'=>true,
   );
   register_post_type( "aplicacion", $args );
