@@ -232,7 +232,7 @@ function grupo_taxonomy() {
     'choose_from_most_used' => __( 'Escoger de los grupo utilizados' ),
     'menu_name' => __( 'Grupo' ),
   ); 
-  register_taxonomy( 'grupo', 'productos', array(
+  register_taxonomy( 'grupo', array( 'productos', 'aplicacion' ), array(
     'hierarchical' => false,
     'labels' => $labels,
     'show_ui' => true,
@@ -737,7 +737,7 @@ function foto1_taxonomy() {
     'separate_items_with_commas' => __( '' ),
     'add_or_remove_items' => __( 'Agregar o Quitar Foto 1' ),
     'choose_from_most_used' => __( 'Escoger de los Foto 1 utilizados' ),
-    'menu_name' => __( 'foto 1' ),
+    'menu_name' => __( 'foto1' ),
   ); 
   register_taxonomy( 'foto1', 'productos', array(
     'hierarchical' => false,
@@ -770,7 +770,7 @@ function foto2_taxonomy() {
     'separate_items_with_commas' => __( '' ),
     'add_or_remove_items' => __( 'Agregar o Quitar Foto 2' ),
     'choose_from_most_used' => __( 'Escoger de los Foto 2 utilizados' ),
-    'menu_name' => __( 'foto 2' ),
+    'menu_name' => __( 'foto2' ),
   ); 
   register_taxonomy( 'foto2', 'productos', array(
     'hierarchical' => false,
@@ -1052,41 +1052,6 @@ function fabricante_taxonomy() {
     'rewrite' => array( 'slug' => 'fabricante' ),
   ));
 }
-
-//////////////////////////////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////// TAXONOMIA GRUPO //////////////////////////////////////////////////
-/////////////////////////////////////////////////////////////////////////////////////////////////////
-add_action( 'init', 'grupo_taxonomy', 0 );
-function grupo_taxonomy() {
-  $labels = array(
-    'name' => _x( 'grupo', 'taxonomy general name' ),
-    'singular_name' => _x( 'Grupo', 'taxonomy singular name' ),
-    'search_items' =>  __( 'Buscar grupo' ),
-    'popular_items' => __( 'Grupos frecuentes' ),
-    'all_items' => __( 'Todos los grupos' ),
-    'parent_item' => null,
-    'parent_item_colon' => null,
-    'edit_item' => __( 'Editar grupo' ), 
-    'update_item' => __( 'Actualizar grupo' ),
-    'add_new_item' => __( 'Agregar nuevo grupo' ),
-    'new_item_name' => __( 'Cantidad de nuevo grupo' ),
-    'separate_items_with_commas' => __( '' ),
-    'add_or_remove_items' => __( 'Agregar o Quitar grupo' ),
-    'choose_from_most_used' => __( 'Escoger de los grupos utilizados' ),
-    'menu_name' => __( 'grupo' ),
-  ); 
-  register_taxonomy( 'grupo', 'aplicacion', array(
-    'hierarchical' => false,
-    'labels' => $labels,
-    'show_ui' => true,
-    'show_admin_column' => true,
-    'update_count_callback' => '_update_post_term_count',
-    'query_var' => true,
-    'rewrite' => array( 'slug' => 'grupo' ),
-  ));
-}
-
-
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////// TAXONOMIA CAJA //////////////////////////////////////////////////
