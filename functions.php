@@ -165,7 +165,7 @@ function codigo_taxonomy() {
     'choose_from_most_used' => __( 'Escoger de los codigos utilizados' ),
     'menu_name' => __( 'codigo' ),
   ); 
-  register_taxonomy('codigo', array('productos','aplicacion'),array(
+  register_taxonomy( 'codigo', array( 'productos', 'aplicacion' ),array(
     'hierarchical' => false,
     'labels' => $labels,
     'show_ui' => true,
@@ -198,7 +198,7 @@ function nombre_taxonomy() {
     'choose_from_most_used' => __( 'Escoger de los nombres utilizados' ),
     'menu_name' => __( 'nombre' ),
   ); 
-  register_taxonomy('nombre', array('productos','aplicacion'),array(
+  register_taxonomy( 'nombre', array( 'productos', 'aplicacion' ),array(
     'hierarchical' => false,
     'labels' => $labels,
     'show_ui' => true,
@@ -232,7 +232,7 @@ function grupo_taxonomy() {
     'choose_from_most_used' => __( 'Escoger de los grupo utilizados' ),
     'menu_name' => __( 'Grupo' ),
   ); 
-  register_taxonomy('grupo','productos',array(
+  register_taxonomy( 'grupo', 'productos', array(
     'hierarchical' => false,
     'labels' => $labels,
     'show_ui' => true,
@@ -263,9 +263,9 @@ function existencia_taxonomy() {
     'separate_items_with_commas' => __( '' ),
     'add_or_remove_items' => __( 'Agregar o Quitar existencia' ),
     'choose_from_most_used' => __( 'Escoger de los existencia utilizados' ),
-    'menu_name' => __( 'Existencia' ),
+    'menu_name' => __( 'existencia' ),
   ); 
-  register_taxonomy('existencia','productos',array(
+  register_taxonomy( 'existencia', 'productos', array(
     'hierarchical' => false,
     'labels' => $labels,
     'show_ui' => true,
@@ -297,9 +297,9 @@ function precio_taxonomy() {
     'separate_items_with_commas' => __( '' ),
     'add_or_remove_items' => __( 'Agregar o Quitar precio' ),
     'choose_from_most_used' => __( 'Escoger de los precios utilizados' ),
-    'menu_name' => __( 'Precio' ),
+    'menu_name' => __( 'precio' ),
   ); 
-  register_taxonomy('precio','productos',array(
+  register_taxonomy( 'precio', 'productos', array(
     'hierarchical' => false,
     'labels' => $labels,
     'show_ui' => true,
@@ -331,9 +331,9 @@ function aplicacion_taxonomy() {
     'separate_items_with_commas' => __( '' ),
     'add_or_remove_items' => __( 'Agregar o Quitar aplicaciones' ),
     'choose_from_most_used' => __( 'Escoger de los aplicaciones utilizados' ),
-    'menu_name' => __( 'Aplicacion' ),
+    'menu_name' => __( 'aplicacion' ),
   ); 
-  register_taxonomy('aplicacion','productos',array(
+  register_taxonomy( 'aplicacion', 'productos', array(
     'hierarchical' => false,
     'labels' => $labels,
     'show_ui' => true,
@@ -366,7 +366,7 @@ function datos_taxonomy() {
     'choose_from_most_used' => __( 'Escoger de los datos utilizados' ),
     'menu_name' => __( 'Datos' ),
   ); 
-  register_taxonomy('datos','productos',array(
+  register_taxonomy( 'datos', 'productos', array(
     'hierarchical' => false,
     'labels' => $labels,
     'show_ui' => true,
@@ -400,7 +400,7 @@ function oem_taxonomy() {
     'choose_from_most_used' => __( 'Escoger de los oem utilizados' ),
     'menu_name' => __( 'oem' ),
   ); 
-  register_taxonomy('oem','productos',array(
+  register_taxonomy( 'oem', 'productos', array(
     'hierarchical' => false,
     'labels' => $labels,
     'show_ui' => true,
@@ -434,7 +434,7 @@ function codalt1_taxonomy() {
     'choose_from_most_used' => __( 'Escoger de los cosotos utilizados' ),
     'menu_name' => __( 'codalt1' ),
   ); 
-  register_taxonomy('codalt1','productos',array(
+  register_taxonomy( 'codalt1', 'productos', array(
     'hierarchical' => false,
     'labels' => $labels,
     'show_ui' => true,
@@ -467,7 +467,7 @@ function codalt2_taxonomy() {
     'choose_from_most_used' => __( 'Escoger de los cosotos utilizados' ),
     'menu_name' => __( 'codalt2' ),
   ); 
-  register_taxonomy('codalt2','productos',array(
+  register_taxonomy( 'codalt2', 'productos', array(
     'hierarchical' => false,
     'labels' => $labels,
     'show_ui' => true,
@@ -501,7 +501,7 @@ function codalt3_taxonomy() {
     'choose_from_most_used' => __( 'Escoger de los cosotos utilizados' ),
     'menu_name' => __( 'codalt3' ),
   ); 
-  register_taxonomy('codalt3','productos',array(
+  register_taxonomy( 'codalt3', 'productos', array(
     'hierarchical' => false,
     'labels' => $labels,
     'show_ui' => true,
@@ -535,7 +535,7 @@ function codalt4_taxonomy() {
     'choose_from_most_used' => __( 'Escoger de los cosotos utilizados' ),
     'menu_name' => __( 'codalt4' ),
   ); 
-  register_taxonomy('codalt4','productos',array(
+  register_taxonomy( 'codalt4', 'productos', array(
     'hierarchical' => false,
     'labels' => $labels,
     'show_ui' => true,
@@ -569,9 +569,9 @@ function procedencia_taxonomy() {
     'separate_items_with_commas' => __( '' ),
     'add_or_remove_items' => __( 'Agregar o Quitar procedencia' ),
     'choose_from_most_used' => __( 'Escoger de los cosotos utilizados' ),
-    'menu_name' => __( 'Procedencia' ),
+    'menu_name' => __( 'procedencia' ),
   ); 
-  register_taxonomy('procedencia','productos',array(
+  register_taxonomy( 'procedencia', 'productos', array(
     'hierarchical' => false,
     'labels' => $labels,
     'show_ui' => true,
@@ -602,9 +602,9 @@ function condicion_taxonomy() {
     'separate_items_with_commas' => __( '' ),
     'add_or_remove_items' => __( 'Agregar o Quitar condicion' ),
     'choose_from_most_used' => __( 'Escoger de las condiciones utilizadas' ),
-    'menu_name' => __( 'Condicion' ),
+    'menu_name' => __( 'condicion' ),
   ); 
-  register_taxonomy('condicion','productos',array(
+  register_taxonomy( 'condicion', 'productos', array(
     'hierarchical' => false,
     'labels' => $labels,
     'show_ui' => true,
@@ -636,9 +636,9 @@ function fob_taxonomy() {
     'separate_items_with_commas' => __( '' ),
     'add_or_remove_items' => __( 'Agregar o Quitar FOB' ),
     'choose_from_most_used' => __( 'Escoger de las FOB utilizadas' ),
-    'menu_name' => __( 'FOB' ),
+    'menu_name' => __( 'fob' ),
   ); 
-  register_taxonomy('fob','productos',array(
+  register_taxonomy( 'fob', 'productos', array(
     'hierarchical' => false,
     'labels' => $labels,
     'show_ui' => true,
@@ -670,9 +670,9 @@ function especificacion_taxonomy() {
     'separate_items_with_commas' => __( '' ),
     'add_or_remove_items' => __( 'Agregar o Quitar especificacion' ),
     'choose_from_most_used' => __( 'Escoger de las especificaciones utilizadas' ),
-    'menu_name' => __( 'Especificacion' ),
+    'menu_name' => __( 'especificacion' ),
   ); 
-  register_taxonomy('especificacion','productos',array(
+  register_taxonomy( 'especificacion', 'productos', array(
     'hierarchical' => false,
     'labels' => $labels,
     'show_ui' => true,
@@ -703,9 +703,9 @@ function factor_taxonomy() {
     'separate_items_with_commas' => __( '' ),
     'add_or_remove_items' => __( 'Agregar o Quitar factor' ),
     'choose_from_most_used' => __( 'Escoger de los factor utilizados' ),
-    'menu_name' => __( 'Factor' ),
+    'menu_name' => __( 'factor' ),
   ); 
-  register_taxonomy('factor','productos',array(
+  register_taxonomy( 'factor', 'productos', array(
     'hierarchical' => false,
     'labels' => $labels,
     'show_ui' => true,
@@ -737,9 +737,9 @@ function foto1_taxonomy() {
     'separate_items_with_commas' => __( '' ),
     'add_or_remove_items' => __( 'Agregar o Quitar Foto 1' ),
     'choose_from_most_used' => __( 'Escoger de los Foto 1 utilizados' ),
-    'menu_name' => __( 'Foto 1' ),
+    'menu_name' => __( 'foto 1' ),
   ); 
-  register_taxonomy('foto1','productos',array(
+  register_taxonomy( 'foto1', 'productos', array(
     'hierarchical' => false,
     'labels' => $labels,
     'show_ui' => true,
@@ -770,9 +770,9 @@ function foto2_taxonomy() {
     'separate_items_with_commas' => __( '' ),
     'add_or_remove_items' => __( 'Agregar o Quitar Foto 2' ),
     'choose_from_most_used' => __( 'Escoger de los Foto 2 utilizados' ),
-    'menu_name' => __( 'Foto 2' ),
+    'menu_name' => __( 'foto 2' ),
   ); 
-  register_taxonomy('foto2','productos',array(
+  register_taxonomy( 'foto2', 'productos', array(
     'hierarchical' => false,
     'labels' => $labels,
     'show_ui' => true,
@@ -804,9 +804,9 @@ function costo_taxonomy() {
     'separate_items_with_commas' => __( '' ),
     'add_or_remove_items' => __( 'Agregar o Quitar costo' ),
     'choose_from_most_used' => __( 'Escoger de los costos utilizados' ),
-    'menu_name' => __( 'Costo' ),
+    'menu_name' => __( 'costo' ),
   ); 
-  register_taxonomy('costo','productos',array(
+  register_taxonomy( 'costo', 'productos', array(
     'hierarchical' => false,
     'labels' => $labels,
     'show_ui' => true,
@@ -838,9 +838,9 @@ function marca_taxonomy() {
     'separate_items_with_commas' => __( '' ),
     'add_or_remove_items' => __( 'Agregar o Quitar marca' ),
     'choose_from_most_used' => __( 'Escoger de las marca utilizados' ),
-    'menu_name' => __( 'Marca' ),
+    'menu_name' => __( 'marca' ),
   ); 
-  register_taxonomy('marca','aplicacion',array(
+  register_taxonomy( 'marca', 'aplicacion', array(
     'hierarchical' => false,
     'labels' => $labels,
     'show_ui' => true,
@@ -871,9 +871,9 @@ function modelo_taxonomy() {
     'separate_items_with_commas' => __( '' ),
     'add_or_remove_items' => __( 'Agregar o Quitar modelo' ),
     'choose_from_most_used' => __( 'Escoger de los modelo utilizados' ),
-    'menu_name' => __( 'Modelo' ),
+    'menu_name' => __( 'modelo' ),
   ); 
-  register_taxonomy('modelo','aplicacion',array(
+  register_taxonomy( 'modelo', 'aplicacion', array(
     'hierarchical' => false,
     'labels' => $labels,
     'show_ui' => true,
@@ -905,9 +905,9 @@ function ano_taxonomy() {
     'separate_items_with_commas' => __( '' ),
     'add_or_remove_items' => __( 'Agregar o Quitar años' ),
     'choose_from_most_used' => __( 'Escoger de los año utilizados' ),
-    'menu_name' => __( 'Año' ),
+    'menu_name' => __( 'año' ),
   ); 
-  register_taxonomy('año','aplicacion',array(
+  register_taxonomy( 'año', 'aplicacion', array(
     'hierarchical' => false,
     'labels' => $labels,
     'show_ui' => true,
@@ -939,9 +939,9 @@ function motor_taxonomy() {
     'separate_items_with_commas' => __( '' ),
     'add_or_remove_items' => __( 'Agregar o Quitar motor' ),
     'choose_from_most_used' => __( 'Escoger de los motor utilizados' ),
-    'menu_name' => __( 'Motor' ),
+    'menu_name' => __( 'motor' ),
   ); 
-  register_taxonomy('motor','aplicacion',array(
+  register_taxonomy( 'motor', 'aplicacion', array(
     'hierarchical' => false,
     'labels' => $labels,
     'show_ui' => true,
@@ -972,9 +972,9 @@ function cilindros_taxonomy() {
     'separate_items_with_commas' => __( '' ),
     'add_or_remove_items' => __( 'Agregar o Quitar cilindros' ),
     'choose_from_most_used' => __( 'Escoger de los cilindros utilizados' ),
-    'menu_name' => __( 'Cilindros' ),
+    'menu_name' => __( 'cilindros' ),
   ); 
-  register_taxonomy('cilindros','aplicacion',array(
+  register_taxonomy( 'cilindros', 'aplicacion', array(
     'hierarchical' => false,
     'labels' => $labels,
     'show_ui' => true,
@@ -1006,9 +1006,9 @@ function estilo_taxonomy() {
     'separate_items_with_commas' => __( '' ),
     'add_or_remove_items' => __( 'Agregar o Quitar estilo' ),
     'choose_from_most_used' => __( 'Escoger de los estilo utilizados' ),
-    'menu_name' => __( 'Estilo' ),
+    'menu_name' => __( 'estilo' ),
   ); 
-  register_taxonomy('estilo','aplicacion',array(
+  register_taxonomy( 'estilo', 'aplicacion', array(
     'hierarchical' => false,
     'labels' => $labels,
     'show_ui' => true,
@@ -1040,9 +1040,9 @@ function fabricante_taxonomy() {
     'separate_items_with_commas' => __( '' ),
     'add_or_remove_items' => __( 'Agregar o Quitar fabricante' ),
     'choose_from_most_used' => __( 'Escoger de los fabricante utilizados' ),
-    'menu_name' => __( 'Fabricante' ),
+    'menu_name' => __( 'fabricante' ),
   ); 
-  register_taxonomy('fabricante','aplicacion',array(
+  register_taxonomy( 'fabricante', 'aplicacion', array(
     'hierarchical' => false,
     'labels' => $labels,
     'show_ui' => true,
@@ -1073,9 +1073,9 @@ function grupo_taxonomy() {
     'separate_items_with_commas' => __( '' ),
     'add_or_remove_items' => __( 'Agregar o Quitar grupo' ),
     'choose_from_most_used' => __( 'Escoger de los grupos utilizados' ),
-    'menu_name' => __( 'Grupo' ),
+    'menu_name' => __( 'grupo' ),
   ); 
-  register_taxonomy('grupo','aplicacion',array(
+  register_taxonomy( 'grupo', 'aplicacion', array(
     'hierarchical' => false,
     'labels' => $labels,
     'show_ui' => true,
@@ -1108,9 +1108,9 @@ function caja_taxonomy() {
     'separate_items_with_commas' => __( '' ),
     'add_or_remove_items' => __( 'Agregar o Quitar caja' ),
     'choose_from_most_used' => __( 'Escoger de los caja utilizados' ),
-    'menu_name' => __( 'Caja' ),
+    'menu_name' => __( 'caja' ),
   ); 
-  register_taxonomy('caja','aplicacion',array(
+  register_taxonomy( 'caja', 'aplicacion', array(
     'hierarchical' => false,
     'labels' => $labels,
     'show_ui' => true,
@@ -1143,9 +1143,9 @@ function transmision_taxonomy() {
     'separate_items_with_commas' => __( '' ),
     'add_or_remove_items' => __( 'Agregar o Quitar transmision' ),
     'choose_from_most_used' => __( 'Escoger de los transmision utilizados' ),
-    'menu_name' => __( 'Transmision' ),
+    'menu_name' => __( 'transmision' ),
   ); 
-  register_taxonomy('transmision','aplicacion',array(
+  register_taxonomy( 'transmision', 'aplicacion', array(
     'hierarchical' => false,
     'labels' => $labels,
     'show_ui' => true,
@@ -1205,7 +1205,7 @@ function postaplicacion(){
    'menu_position'=>4,
    'capability_type'=> 'page',
    'supports'=> array( 'title'),
-  'taxonomies' => array('codigo', 'marca', 'modelo', 'año', 'motor', 'cilindros', 'estilo', 'fabricante', 'grupo', 'nombre', 'caja', 'transmision'),
+  'taxonomies' => array('codigo', 'marca', 'modelo', 'año', 'motor', 'cilindros', 'estilo', 'fabricante', 'grupo', 'nombre', 'caja', 'transmision' ),
    'query_var'=>true,
   );
   register_post_type( "aplicacion", $args );
