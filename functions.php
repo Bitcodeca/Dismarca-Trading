@@ -108,6 +108,7 @@ function introduce_qvs($qv) {
     $qv[] = 'marca';
     $qv[] = 'modelo';
     $qv[] = 'año';
+    $qv[] = 'grupo';
     return $qv;
 }
 
@@ -133,6 +134,13 @@ function movie_tax_query($query) {
             'taxonomy' => 'año',
             'field' => 'slug',
             'terms' => $query->query_vars['año']
+        );
+    }
+    if (!empty($query->query_vars['grupo'])) {
+        $tax_query[] = array(
+            'taxonomy' => 'grupo',
+            'field' => 'slug',
+            'terms' => $query->query_vars['grupo']
         );
     }
     if (!empty($tax_query)) {

@@ -13,8 +13,12 @@
         foreach ($grupo as $i) {
       ?>
         <a href="<?php echo bloginfo('url').'/?s='.$i->slug; ?>">
-            <div class="col-md-3 col-sm-3 col-xs-6 height350">
-                <h2 class="letranegra"><?php echo $i->name ?></h2>
+            <div class="col-md-4 col-sm-4 col-xs-6">
+                <div class="paddingproducto height250">
+                    <div class="fondorojo productoinner">
+                        <h2 class="letrablanca text-center"><?php echo $i->name ?></h2>
+                    </div>
+                </div>
             </div>
         </a>
         <?php } ?>

@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+<h1>SEARCH</h1>
 	<script type="text/javascript">
 	    jQuery("li.menu-item-19").addClass('active');
 	</script>
