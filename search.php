@@ -11,6 +11,8 @@
 				while ( have_posts() ) : the_post(); 
 					if (get_post_type()=='articulos') { 
 				        $postid = get_the_ID();
+                        
+                        /*
 				        $codigoa = get_the_terms( $post->ID , 'codigo' ); $codigo=$codigoa[0]->name;
 				        $grupoa = get_the_terms( $post->ID , 'grupo' ); $grupo=$grupoa[0]->name;
 				        $existenciaa = get_the_terms( $post->ID , 'existencia' ); $existencia=$existenciaa[0]->name;
@@ -28,7 +30,9 @@
 				        $presentaciona = get_the_terms( $post->ID , 'presentacion' ); $presentacion=$presentaciona[0]->name;
 				        $procedenciaa = get_the_terms( $post->ID , 'procedencia' ); $procedencia=$procedenciaa[0]->name;
 				        $fabricaciona = get_the_terms( $post->ID , 'fabricacion' ); $fabricacion=$fabricaciona[0]->name;
-				        $marcaa = get_the_terms( $post->ID , 'marca' ); $marca=$marcaa[0]->name; ?>
+				        $marcaa = get_the_terms( $post->ID , 'marca' ); $marca=$marcaa[0]->name;
+                        */ ?>
+          
   			            <a href="#<?php echo $postid; ?>" class="fancybox">
 			              <div class="col-md-3 col-sm-3 col-xs-6 height350">
 			                  <h2 class="letranegra"><?php echo get_the_title(); ?></h2>
@@ -77,6 +81,7 @@
 					    if ( $issue->have_posts() ) {
 					        while ( $issue->have_posts() ) : $issue->the_post();
 						        $postid = get_the_ID();
+                            /*
 						        $codigoa = get_the_terms( $post->ID , 'codigo' ); $codigo=$codigoa[0]->name;
 						        $grupoa = get_the_terms( $post->ID , 'grupo' ); $grupo=$grupoa[0]->name;
 						        $existenciaa = get_the_terms( $post->ID , 'existencia' ); $existencia=$existenciaa[0]->name;
@@ -94,7 +99,8 @@
 						        $presentaciona = get_the_terms( $post->ID , 'presentacion' ); $presentacion=$presentaciona[0]->name;
 						        $procedenciaa = get_the_terms( $post->ID , 'procedencia' ); $procedencia=$procedenciaa[0]->name;
 						        $fabricaciona = get_the_terms( $post->ID , 'fabricacion' ); $fabricacion=$fabricaciona[0]->name;
-						        $marca2a = get_the_terms( $post->ID , 'marca' ); $marca2=$marca2a[0]->name; ?>
+						        $marca2a = get_the_terms( $post->ID , 'marca' ); $marca2=$marca2a[0]->name; 
+                            */ ?>
 					          	<a href="#<?php echo $postid; ?>" class="fancybox">
 					      			<div class="col-md-3 col-sm-3 col-xs-6 height350">
 						                <h2 class="letranegra"><?php echo get_the_title(); ?></h2>

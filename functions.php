@@ -142,6 +142,38 @@ function movie_tax_query($query) {
     return $query;
 }
 
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////// TAXONOMIA TAMANO ///////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+add_action( 'init', 'tamaño_taxonomy', 0 );
+function tamaño_taxonomy() {
+  $labels = array(
+    'name' => _x( 'tamaño', 'taxonomy general name' ),
+    'singular_name' => _x( 'tamaño', 'taxonomy singular name' ),
+    'search_items' =>  __( 'Buscar tamaño' ),
+    'popular_items' => __( 'tamaño frecuentes' ),
+    'all_items' => __( 'Todos los tamaño' ),
+    'parent_item' => null,
+    'parent_item_colon' => null,
+    'edit_item' => __( 'Editar tamaño' ), 
+    'update_item' => __( 'Actualizar tamaño' ),
+    'add_new_item' => __( 'Agregar nuevo tamaño' ),
+    'new_item_name' => __( 'Cantidad de nuevo tamaño' ),
+    'separate_items_with_commas' => __( '' ),
+    'add_or_remove_items' => __( 'Agregar o Quitar tamaño' ),
+    'choose_from_most_used' => __( 'Escoger de los tamaños utilizados' ),
+    'menu_name' => __( 'tamaño' ),
+  ); 
+  register_taxonomy('tamaño','post',array(
+    'hierarchical' => false,
+    'labels' => $labels,
+    'show_ui' => true,
+    'show_admin_column' => true,
+    'update_count_callback' => '_update_post_term_count',
+    'query_var' => true,
+    'rewrite' => array( 'slug' => 'tamaño' ),
+  ));
+}
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////// TAXONOMIA CODIGO /////////////////////////////////////////////////////////
