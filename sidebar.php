@@ -44,7 +44,7 @@
 			<h3 class="margin0 letra2">Filtrar por Categoría</h3>
 		</div>
 		<div class="categoriassidebar">
-			<?php $marca = get_terms( 'grupo', array( 'orderby' => 'name', 'hide_empty' => 0 ) );
+			<?php $marca = get_terms( 'grupo', array( 'orderby' => 'name', 'hide_empty' => 1 ) );
             foreach ($marca as $i) { ?>
                 <button class="btn btn-footer displayblock" type="submit" name="s" id="s" value="<?php echo $i->slug; ?>">
                     <h4 class="letra2"><?php echo $i->name; ?></h4>

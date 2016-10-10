@@ -5,6 +5,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
         <title> Dismarca</title>
+        <link rel=icon type=image/x-icon href=img/favicon.ico />
+        <link rel=icon type=image/png href=img/favicon.png />
+        <link rel=icon type=image/gif href=img/favicon.gif />
 		<?php wp_head(); ?>
         <link href='https://fonts.googleapis.com/css?family=Catamaran|Electrolize|Josefin+Sans' rel='stylesheet' type='text/css'>
 	</head>
@@ -25,7 +28,7 @@
                     </div>
                     <div class="col-md-6 col-sm-6 col-xs-12 height100 margintopmenos50xs">
                         <div class="margintop25">
-                            <p class="text-center letraroja"><b><i class="fa fa-phone letraazul" aria-hidden="true"></i> 0251-xxxxxx | <i class="fa fa-phone letraazul" aria-hidden="true"></i> 0251-xxxxxx</b></p>
+                            <p class="text-center letraroja"><b><i class="fa fa-phone letraazul" aria-hidden="true"></i> 0251-929 0344 | <i class="fa fa-phone letraazul" aria-hidden="true"></i> 0251-446 2093</b></p>
                         </div>
                         <div class="margintop10 marginbot10 xsmargin25">
                             <?php get_search_form(); ?>

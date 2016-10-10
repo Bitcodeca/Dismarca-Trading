@@ -15,12 +15,14 @@
                         <div class="titulofooter">
                             <h3 class="margin0 letra2">Contáctanos</h3>
                         </div>
-                        <h5 class="letra2"><i class="margintop10 fa fa-phone fa-lg"> </i> Teléfono: (058) 0251-xxxxxxx</h5>
-                        <h5 class="marginbot0 letra2"><i class="fa fa-fax fa-lg"> </i> Fax: (058) 0251-xxxxxxx</h5>
-                        <h5 class="marginbot0 letra2"><i class="fa fa-map-marker fa-lg"></i> Barquisimeto, Edo Lara. Venezuela </h5>
-                        <h5 class="marginbot0 letra2"><i class="fa fa-envelope"></i>email</h5>
-                        <h5 class="marginbot0 letra2"><i class="fa fa-envelope"></i> fax</h5>
-                        <h5 class="marginbot0 letra2"><i class="fa fa-envelope"></i> telf</h5>
+                        <h5 class="letra2"><i class="margintop10 fa fa-phone fa-lg"> </i> Teléfono: 0251-446 2093</h5>
+                        <h5 class="letra2"><i class="margintop10 fa fa-phone fa-lg"> </i> Teléfono: 0251-446 4734</h5>
+                        <h5 class="letra2"><i class="margintop10 fa fa-mobile fa-lg"> </i> Celular: 0424-549 2498</h5>
+                        <h5 class="letra2"><i class="margintop10 fa fa-mobile fa-lg"> </i> Celular: 0416-055 8455</h5>
+                        <h5 class="letra2"><i class="margintop10 fa fa-mobile fa-lg"> </i> Celular: 0412-519 2676</h5>
+                        <h5 class="marginbot0 letra2"><i class="fa fa-fax fa-lg"> </i> Fax: 0251-447 1182</h5>
+                        <h5 class="marginbot0 letra2"><i class="fa fa-map-marker fa-lg"></i> Calle 51, esquina carrera 13 C, Barquisimeto, Edo Lara. Venezuela </h5>
+                        <h5 class="marginbot0 letra2"><i class="fa fa-envelope"></i>contacto@dismarca.com</h5>
                     </div>
                     <div class="col-md-3 col-sm-3 col-xs-12  marginbot10">
                         <div class="titulofooter">
@@ -28,7 +30,7 @@
                         </div>
                         <form method="get" id="searchform" action="<?php bloginfo('url'); ?>/" class="margintop10">
                             <label class="hidden" for="s"><?php _e('Search:'); ?></label>
-                            <?php $marca = get_terms( 'grupo', array( 'orderby' => 'name', 'hide_empty' => 0 ) );
+                            <?php $marca = get_terms( 'grupo', array( 'orderby' => 'name', 'hide_empty' => 1 ) );
                             foreach ($marca as $i) { ?>
                                     <button class="btn btn-footer displayblock" type="submit" name="s" id="s" value="<?php echo $i->slug; ?>">
                                         <h5 class="marginbot0 letra2"><?php echo $i->name; ?></h5>

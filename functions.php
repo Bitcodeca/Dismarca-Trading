@@ -115,6 +115,13 @@ function introduce_qvs($qv) {
 add_filter('relevanssi_modify_wp_query', 'movie_tax_query');
 function movie_tax_query($query) {
     $tax_query = array();
+    if (!empty($query->query_vars['grupo'])) {
+        $tax_query[] = array(
+            'taxonomy' => 'grupo',
+            'field' => 'slug',
+            'terms' => $query->query_vars['grupo']
+        );
+    }
     if (!empty($query->query_vars['marca'])) {
         $tax_query[] = array(
             'taxonomy' => 'marca',
@@ -136,15 +143,8 @@ function movie_tax_query($query) {
             'terms' => $query->query_vars['año']
         );
     }
-    if (!empty($query->query_vars['grupo'])) {
-        $tax_query[] = array(
-            'taxonomy' => 'grupo',
-            'field' => 'slug',
-            'terms' => $query->query_vars['grupo']
-        );
-    }
     if (!empty($tax_query)) {
-        $tax_query['relation'] = 'AND'; // you can also use 'OR' here
+        $tax_query['relation'] = 'OR'; // you can also use 'OR' here
         $query->set('tax_query', $tax_query);
     }
     return $query;

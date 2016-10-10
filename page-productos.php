@@ -15,7 +15,7 @@
         <a href="<?php echo bloginfo('url').'/?s='.$i->slug; ?>">
             <div class="col-md-4 col-sm-4 col-xs-6">
                 <div class="paddingproducto height250">
-                    <div class="fondorojo productoinner">
+                    <div class="fondoazul productoinner">
                         <h2 class="letrablanca text-center"><?php echo $i->name ?></h2>
                     </div>
                 </div>
