@@ -4,10 +4,16 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <!-- Chrome, Firefox OS, Opera and Vivaldi -->
+        <meta name="theme-color" content="#000066">
+        <!-- Windows Phone -->
+        <meta name="msapplication-navbutton-color" content="#000066">
+        <!-- iOS Safari -->
+        <meta name="apple-mobile-web-app-status-bar-style" content="#000066">
         <title> Dismarca</title>
-        <link rel=icon type=image/x-icon href=img/favicon.ico />
-        <link rel=icon type=image/png href=img/favicon.png />
-        <link rel=icon type=image/gif href=img/favicon.gif />
+        <link rel=icon type=image/x-icon href="<?php echo get_bloginfo('template_directory');?>/img/favicon.ico" />
+        <link rel=icon type=image/png href="<?php echo get_bloginfo('template_directory');?>/img/favicon.png" />
+        <link rel=icon type=image/gif href="<?php echo get_bloginfo('template_directory');?>/img/favicon.gif" />
 		<?php wp_head(); ?>
         <link href='https://fonts.googleapis.com/css?family=Catamaran|Electrolize|Josefin+Sans' rel='stylesheet' type='text/css'>
 	</head>

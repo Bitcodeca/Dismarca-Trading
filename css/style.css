@@ -97,6 +97,8 @@ input[type=text]:focus { box-shadow: 0 0 0px rgba(3,71,98, 1); border: 0px solid
 .titulosidebar { background-color: #990000; padding: 11px; color: white;}
 .titulosidebar:after, .titulosidebar::after { position: absolute; left: 10%; content: ''; width: 0; height: 0; border-top: solid 25px #990000; border-left: solid 25px transparent;border-right: solid 25px transparent;}
 .categoriassidebar { background-color: #ddd; padding: 10px;}
+.categoriassidebar h4 { white-space: initial; text-align: left; }
+footer h5 { white-space: initial; text-align: left; }
 .btn-buscar { width: 100%; color: white; background-color: #034762; border-radius: 0px; padding: 9px; font-size: 1.5em; font-family: 'Electrolize', sans-serif; }
 .btn-buscar ::-webkit-input-placeholder { font-family: 'Electrolize', sans-serif;  font-size: 1.3em; }
 .btn-buscar :-moz-placeholder { font-family: 'Electrolize', sans-serif;  font-size: 1.2em; }
@@ -150,6 +152,10 @@ input[type=text]:focus { box-shadow: 0 0 0px rgba(3,71,98, 1); border: 0px solid
 .productoinner {position: relative; width: 100%; height: 100%;}
 .productoinner h2 {position: relative; top: 50%; -ms-transform: translate(0px, -50%); -webkit-transform: translate(0px, -50%); transform: translate(0px, -50%); }
 .height250 {height: 250px;}
+.popup img {max-width: 50vw; margin: auto;}
+.thfooter { width: 130px; }
+.negrita {font-weight: bolder;}
+.overflowhidden {overflow: hidden;}
 
 .input { position: relative; z-index: 1; display: inline-block; margin: 1em; width: calc(100% - 2em); vertical-align: top; }
 .input__field { position: relative; display: block; float: right; padding: 0.8em; width: 60%; border: none; border-radius: 0; background: #f0f0f0; color: #aaa; font-weight: bold; -webkit-appearance: none; }
@@ -192,8 +198,10 @@ input[type=text]:focus { box-shadow: 0 0 0px rgba(3,71,98, 1); border: 0px solid
 	.telf { position: relative; top: 10%; left: auto; right: auto; width: 100%; text-align: center; }
 	.xsmargin25{ margin: 25px 0px 25px 0px; }
 	.minheight550 { min-height: 550px; }
+    .popup img {max-width: 60%;}
 }
 @media (max-width:520px){ 
+    .popup img {width: 100%;}
 	.navbar-default .navbar-collapse { background-color: white; border-bottom: 1px solid #034762; }
 	.navbar-default .navbar-nav > li > a { color:black; }
 	.navbar-default .navbar-nav > .active > a, 
@@ -203,4 +211,5 @@ input[type=text]:focus { box-shadow: 0 0 0px rgba(3,71,98, 1); border: 0px solid
 	.navbar-nav { margin: 0px; }
 	.height100 { height: auto; }
 	.margintopmenos50xs { margin-top: -50px; }
+    .popup img {max-width: 75%;}
 }

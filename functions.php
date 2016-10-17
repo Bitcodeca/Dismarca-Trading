@@ -144,7 +144,7 @@ function movie_tax_query($query) {
         );
     }
     if (!empty($tax_query)) {
-        $tax_query['relation'] = 'OR'; // you can also use 'OR' here
+        $tax_query['relation'] = 'AND'; // you can also use 'OR' here
         $query->set('tax_query', $tax_query);
     }
     return $query;
@@ -1181,7 +1181,7 @@ function postarticulos(){
    'show_in_admin_bar'=> true,
    'menu_position'=>4,
    'capability_type'=> 'page',
-   'supports'=> array( 'title', 'excerpt'),
+   'supports'=> array( 'title', 'editor'),
   'taxonomies' => array( 'codigo', 'nombre', 'grupo', 'precio', 'existencia', 'aplicacion', 'datos', 'oem', 'codalt1', 'codalt2', 'codlat3', 'codlat4', 'procedencia', 'condicion', 'fob', 'especificacion', 'factor', 'foto1', 'foto2', 'costo' ),
    'query_var'=>true,
   );
@@ -1209,7 +1209,7 @@ function postaplicacion(){
    'show_in_admin_bar'=> true,
    'menu_position'=>4,
    'capability_type'=> 'page',
-   'supports'=> array( 'title'),
+   'supports'=> array( 'title', 'editor'),
   'taxonomies' => array('codigo', 'marca', 'modelo', 'año', 'motor', 'cilindros', 'estilo', 'fabricante', 'grupo', 'nombre', 'caja', 'transmision' ),
    'query_var'=>true,
   );
