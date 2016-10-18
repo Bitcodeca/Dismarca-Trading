@@ -4,18 +4,36 @@
   	<div class="row margintop25">
   		<iframe src="https://www.google.com/maps/d/embed?mid=1gYrl6AXGoePDpvr_NppUfzqurLQ&hl=es" width="100%" height="256"></iframe>
   	</div>
+  		<h2 class="text-center"><i class="fa fa-envelope-o letraroja" aria-hidden="true"></i> ¡Escríbenos!</h2>
   	<div class="col-md-6 col-sm-6 col-xs-12">
-        <h5 class="letra2"><i class="margintop10 fa fa-phone fa-lg"> </i> Teléfono: 0251-446 2093</h5>
-        <h5 class="letra2"><i class="margintop10 fa fa-phone fa-lg"> </i> Teléfono: 0251-446 4734</h5>
-        <h5 class="letra2"><i class="margintop10 fa fa-mobile fa-lg"> </i> Celular: 0424-549 2498</h5>
-        <h5 class="letra2"><i class="margintop10 fa fa-mobile fa-lg"> </i> Celular: 0416-055 8455</h5>
-        <h5 class="letra2"><i class="margintop10 fa fa-mobile fa-lg"> </i> Celular: 0412-519 2676</h5>
-        <h5 class="marginbot0 letra2"><i class="fa fa-fax fa-lg"> </i> Fax: 0251-447 1182</h5>
-        <h5 class="marginbot0 letra2"><i class="fa fa-map-marker fa-lg"></i> Calle 51, esquina carrera 13 C, Barquisimeto, Edo Lara. Venezuela </h5>
-        <h5 class="marginbot0 letra2"><i class="fa fa-envelope"></i>contacto@dismarca.com</h5>
+                        
+                            <table style=width:100%>
+                                <tr>
+                                    <th class="thfooter"><h5 class="letra2"><i class="margintop10 fa fa-phone fa-lg"> </i> Teléfono:</h5></th>
+                                    <th>
+                                        <p><h5 class="letra2">0251-929-0344</h5></p>
+                                        <p><h5 class="letra2">0251-446-2093</h5></p>
+                                        <p><h5 class="letra2">0251-446-4734</h5></p>
+                                        <p><h5 class="letra2">0424-549-2498</h5></p>
+                                        <p><h5 class="letra2">0416-651-6288</h5></p>
+                                        <p><h5 class="letra2">0412-053-0883</h5></p>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th class="thfooter"><h5 class="marginbot0 letra2"><i class="fa fa-fax fa-lg"> </i> Fax:</h5></th>
+                                    <th><h5 class="letra2 marginbot0">0251-447 1182</h5></th> 
+                                </tr>
+                                <tr>
+                                    <th class="thfooter"><h5 class="marginbot0 letra2"><i class="fa fa-map-marker fa-lg"></i> Ubicación:</h5></th>
+                                    <th><h5 class="letra2 marginbot0">Calle 51, esquina carrera 13 C, Barquisimeto, Edo Lara. Venezuela</h5></th> 
+                                </tr>
+                                <tr>
+                                    <th class="thfooter"><h5 class="marginbot0 letra2"><i class="fa fa-envelope fa-lg"></i> Correo:</h5></th>
+                                    <th><h5 class="letra2 marginbot0">ventas@dismarca.com</h5></th> 
+                                </tr>
+                            </table>
   	</div>
   	<div class="col-md-6 col-sm-6 col-xs-12">
-  		<h2><i class="fa fa-envelope-o letraroja" aria-hidden="true"></i> ¡Escríbenos!</h2>
 			<span class="input input--hoshi">
 				<input class="input__field input__field--hoshi" type="text" id="input-4" required />
 				<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="input-4">

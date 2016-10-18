@@ -283,6 +283,40 @@ function grupo_taxonomy() {
   ));
 }
 
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////// TAXONOMIA CATEGORIA ////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+add_action( 'init', 'categoria_taxonomy', 0 );
+function categoria_taxonomy() {
+  $labels = array(
+    'name' => _x( 'categoria', 'taxonomy general name' ),
+    'singular_name' => _x( 'categoria', 'taxonomy singular name' ),
+    'search_items' =>  __( 'Buscar categoria' ),
+    'popular_items' => __( 'categoria frecuentes' ),
+    'all_items' => __( 'Todos los categoria' ),
+    'parent_item' => null,
+    'parent_item_colon' => null,
+    'edit_item' => __( 'Editar categoria' ), 
+    'update_item' => __( 'Actualizar categoria' ),
+    'add_new_item' => __( 'Agregar nueva categoria' ),
+    'new_item_name' => __( 'Cantidad de nuevo categoria' ),
+    'separate_items_with_commas' => __( '' ),
+    'add_or_remove_items' => __( 'Agregar o Quitar categoria' ),
+    'choose_from_most_used' => __( 'Escoger de los categoria utilizados' ),
+    'menu_name' => __( 'Categoria' ),
+  ); 
+  register_taxonomy( 'categoria', 'productos', array(
+    'hierarchical' => false,
+    'labels' => $labels,
+    'show_ui' => true,
+    'show_admin_column' => true,
+    'update_count_callback' => '_update_post_term_count',
+    'query_var' => true,
+    'rewrite' => array( 'slug' => 'categoria' ),
+  ));
+}
+
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////// TAXONOMIA EXISTENCIA /////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////
@@ -1161,6 +1195,34 @@ function transmision_taxonomy() {
   ));
 }
 
+
+////////////////////////
+// TAXONOMIA SUBGRUPO //
+//////////////////////
+add_action( 'init', 'taxonomiasubgrupo', 0 );
+function taxonomiasubgrupo() {
+  $labels = array(
+    'name' => _x( 'subgrupo', 'taxonomy general name' ),
+    'singular_name' => _x( 'subgrupo', 'taxonomy singular name' ),
+    'search_items' =>  __( 'Buscar subgrupo' ),
+    'all_items' => __( 'Todos los subgrupo' ),
+    'edit_item' => __( 'Editar subgrupo' ), 
+    'update_item' => __( 'Actualizar subgrupo' ),
+    'add_new_item' => __( 'Añadir subgrupo' ),
+    'new_item_name' => __( 'Nuevo subgrupo' ),
+    'menu_name' => __( 'subgrupo' ),
+  );    
+  register_taxonomy('subgrupo',array('grupos'), array(
+    'hierarchical' => true,
+    'labels' => $labels,
+    'show_ui' => true,
+    'show_admin_column' => true,
+    'query_var' => true,
+    'rewrite' => array( 'slug' => 'subgrupo' ),
+  ));
+
+}
+
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////// CUSTOM POST ARTICULOS ////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -1182,7 +1244,7 @@ function postarticulos(){
    'menu_position'=>4,
    'capability_type'=> 'page',
    'supports'=> array( 'title', 'editor'),
-  'taxonomies' => array( 'codigo', 'nombre', 'grupo', 'precio', 'existencia', 'aplicacion', 'datos', 'oem', 'codalt1', 'codalt2', 'codlat3', 'codlat4', 'procedencia', 'condicion', 'fob', 'especificacion', 'factor', 'foto1', 'foto2', 'costo' ),
+  'taxonomies' => array( 'codigo', 'nombre', 'categoria', 'grupo', 'precio', 'existencia', 'aplicacion', 'datos', 'oem', 'codalt1', 'codalt2', 'codlat3', 'codlat4', 'procedencia', 'condicion', 'fob', 'especificacion', 'factor', 'foto1', 'foto2', 'costo' ),
    'query_var'=>true,
   );
   register_post_type( "articulos", $args );
@@ -1216,6 +1278,33 @@ function postaplicacion(){
   register_post_type( "aplicacion", $args );
  }
  add_action("init","postaplicacion");
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////// CUSTOM POST APLICACIONES ////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+function postgrupo(){
+   $args = array(
+   'labels'=> array( 'name'=>'grupos',
+       'singular_name'=> 'grupos',
+       'menu_name'=>'grupos',
+       'name_admin_bar'=> 'grupos',
+       'all_items' =>'Ver todas las grupos',
+       'add_new'=> 'Añadir nueva grupos' ),
+   'description' =>"Este tipo de post es para grupos",
+   'public' => true,
+   'exclude_from_search'=>false,
+   'publicly_queryable'=> true,
+   'show_ui' => true,
+   'show_in_menu'=> true,
+   'show_in_admin_bar'=> true,
+   'menu_position'=>4,
+   'capability_type'=> 'page',
+   'supports'=> array( 'title' ),
+  'taxonomies' => array('subgrupo'),
+   'query_var'=>true,
+  );
+  register_post_type( "grupos", $args );
+ }
+ add_action("init","postgrupo");
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////

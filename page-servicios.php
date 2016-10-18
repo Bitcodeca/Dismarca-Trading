@@ -10,8 +10,8 @@
 				</div>
 				<div class="height350 fondoazul innerservicioshorarioubicacion">
 					<h2 class="text-center letrablanca">Horario</h2>
-					<h4 class="letrablanca margintop20">Lunes a Viernes <smal>7:30am a 4:30pm</smal></h4>
-					<h4 class="letrablanca margintop20">Sábado <smal>8:30am a 4:30pm</smal></h4>
+					<h4 class="letrablanca margintop20"><b>Lunes a Viernes</b> <smal>7:30am a 4:30pm</smal></h4>
+					<h4 class="letrablanca margintop20"><b>Sábado</b> <smal>8:30am a 4:30pm</smal></h4>
 				</div>
 			</div>
 			<div class="row">

@@ -20,11 +20,12 @@
                                 <tr>
                                     <th class="thfooter"><h5 class="letra2"><i class="margintop10 fa fa-phone fa-lg"> </i> Teléfono:</h5></th>
                                     <th>
-                                        <p><h5 class="letra2">0251-446 2093</h5></p>
-                                        <p><h5 class="letra2">0251-446 4734</h5></p>
-                                        <p><h5 class="letra2">0424-549 2498</h5></p>
-                                        <p><h5 class="letra2">0416-055 8455</h5></p>
-                                        <p><h5 class="letra2">0412-519 2676</h5></p>
+                                        <p><h5 class="letra2">0251-929-0344</h5></p>
+                                        <p><h5 class="letra2">0251-446-2093</h5></p>
+                                        <p><h5 class="letra2">0251-446-4734</h5></p>
+                                        <p><h5 class="letra2">0424-549-2498</h5></p>
+                                        <p><h5 class="letra2">0416-651-6288</h5></p>
+                                        <p><h5 class="letra2">0412-053-0883</h5></p>
                                     </th>
                                 </tr>
                                 <tr>
@@ -36,8 +37,8 @@
                                     <th><h5 class="letra2 marginbot0">Calle 51, esquina carrera 13 C, Barquisimeto, Edo Lara. Venezuela</h5></th> 
                                 </tr>
                                 <tr>
-                                    <th class="thfooter"><h5 class="marginbot0 letra2"><i class="fa fa-map-envelope fa-lg"></i> Correo:</h5></th>
-                                    <th><h5 class="letra2 marginbot0">contacto@dismarca.com</h5></th> 
+                                    <th class="thfooter"><h5 class="marginbot0 letra2"><i class="fa fa-envelope fa-lg"></i> Correo:</h5></th>
+                                    <th><h5 class="letra2 marginbot0">ventas@dismarca.com</h5></th> 
                                 </tr>
                             </table>
                     </div>

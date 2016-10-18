@@ -106,10 +106,9 @@
 		</div>
       	<div class="grid-item grid-item--width5 grid-item--height2">
       		<div class="overlay"></div>
-			<img src="<?php echo get_bloginfo('template_directory');?>/img/dsmc03.jpg" class="right0">
+			<img src="<?php echo get_bloginfo('template_directory');?>/img/dsmc08.jpg" class="right0">
 			<div class="innerbanner text-center">
-				<h2>Texto</h2>
-				<p>Descripcion</p>
+				<h2>Servicio de grúa</h2>
 			</div>
 		</div>
 		<div class="grid-item grid-item--width3 fondogris">

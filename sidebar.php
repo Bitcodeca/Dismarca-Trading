@@ -44,12 +44,33 @@
 			<h3 class="margin0 letra2">Filtrar por Categoría</h3>
 		</div>
 		<div class="categoriassidebar">
-			<?php $marca = get_terms( 'grupo', array( 'orderby' => 'name', 'hide_empty' => 1 ) );
-            foreach ($marca as $i) { ?>
-                <button class="btn btn-footer displayblock" type="submit" name="s" id="s" value="<?php echo $i->slug; ?>">
-                    <h4 class="letra2"><?php echo $i->name; ?></h4>
-                </button>
-            <?php } ?>
+            <?php $args=array('post_status' => 'publish', 'post_type'=> 'grupos', 'order' => 'ASC', 'posts_per_page' => -1 ); 
+            $my_query = new WP_Query($args);
+            if( $my_query->have_posts() ) {
+                while ($my_query->have_posts()) : $my_query->the_post();
+                    $id = get_the_ID();
+                    $subgrupo = get_the_terms( $post->ID , 'subgrupo' ); ?>
+                    <div class="btn-group">
+                        <button class="btn btn-footer displayblock" type="submit" name="s" id="s" value="<?php the_title_attribute(); ?>">
+                            <h4 class="letra2"><?php echo get_the_title(); ?></h4>
+                        </button>
+                        <button type="button" class="btn btn-dropdown dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="caret"></span>
+                            <span class="sr-only">Toggle Dropdown</span>
+                          </button>
+
+                        <ul class="dropdown-menu">
+                            <?php foreach($subgrupo as $sg){ 
+                                    $nombre=$sg->name; ?>
+                                    <li><a href="http://dismarca.com/?s=<?php echo $nombre; ?>"><?php echo $nombre; ?></a></li>
+                            <?php } ?>
+                        </ul>
+                    </div>
+            <br>
+                <?php endwhile;
+            } ?>
+            
+			
 		</div>
 	</form>
 

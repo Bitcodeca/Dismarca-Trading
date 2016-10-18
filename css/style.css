@@ -156,6 +156,8 @@ footer h5 { white-space: initial; text-align: left; }
 .thfooter { width: 130px; }
 .negrita {font-weight: bolder;}
 .overflowhidden {overflow: hidden;}
+.btn-dropdown:hover { background-color: #000066; color: white;  }
+.dropdown-menu>li>a{ font-family: 'Electrolize', sans-serif; }
 
 .input { position: relative; z-index: 1; display: inline-block; margin: 1em; width: calc(100% - 2em); vertical-align: top; }
 .input__field { position: relative; display: block; float: right; padding: 0.8em; width: 60%; border: none; border-radius: 0; background: #f0f0f0; color: #aaa; font-weight: bold; -webkit-appearance: none; }
