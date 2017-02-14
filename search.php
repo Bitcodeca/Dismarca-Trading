@@ -32,7 +32,7 @@
 				        $costo = get_the_terms( $post->ID , 'costo' ); $costo=$costo[0]->name;
                           ?>
   			            <a href="#<?php echo $postid; ?>" class="fancybox">
-			              <div class="col-md-3 col-sm-3 col-xs-6 height350 overflowhidden">
+			              <div class="col-md-3 col-sm-4 col-xs-6 height350 overflowhidden">
 			                  <img src="<?php echo $foto1; ?>" class="img-responsive">
 			                  <h2 class="letranegra"><?php echo get_the_title(); ?></h2>
 
@@ -136,7 +136,7 @@
                                 $costo = get_the_terms( $post->ID , 'costo' ); $costo=$costo[0]->name;
                               ?>
 					          	<a href="#<?php echo $postid; ?>" class="fancybox">
-					      			<div class="col-md-3 col-sm-3 col-xs-6 height350 overflowhidden">
+					      			<div class="col-md-3 col-sm-4 col-xs-6 height350 overflowhidden">
                                           <img src="<?php echo $foto1; ?>" class="img-responsive">
                                           <h2 class="letranegra"><?php echo get_the_title(); ?></h2>
                                         <table style=width:100%>

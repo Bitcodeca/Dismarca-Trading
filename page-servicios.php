@@ -10,8 +10,21 @@
 				</div>
 				<div class="height350 fondoazul innerservicioshorarioubicacion">
 					<h2 class="text-center letrablanca">Horario</h2>
-					<h4 class="letrablanca margintop20"><b>Lunes a Viernes</b> <smal>7:30am a 4:30pm</smal></h4>
-					<h4 class="letrablanca margintop20"><b>Sábado</b> <smal>8:30am a 4:30pm</smal></h4>
+                    
+                            <table class="margintop50" style=width:100%>
+                                <tr>
+                                    <th><h4 class="letrablanca"><b>Lunes a Viernes</b></h4></th>
+                                    <th>
+                                        <h4 class="letrablanca">7:30am a 4:30pm</h4>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th><h4 class="letrablanca"><b>Sábado</b></h4></th>
+                                    <th>
+                                        <h4 class="letrablanca">8:30am a 4:30pm</h4>
+                                    </th>
+                                </tr>
+                            </table>
 				</div>
 			</div>
 			<div class="row">
@@ -21,7 +34,7 @@
 				</div>
 				<div class="height350 fondorojo innerservicioshorarioubicacion">
 					<h2 class="letrablanca text-center">Ubicación</h2>
-                    <h4 class="letrablanca margintop20">Calle 51, esquina carrera 13 C<br> Barquisimeto, Edo Lara. Venezuela</h4>
+                    <h4 class="letrablanca margintop50">Calle 51, esquina carrera 13 C<br> Barquisimeto, Edo Lara. Venezuela</h4>
 				</div>
 			</div>
 	 	</div>

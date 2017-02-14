@@ -20,12 +20,12 @@
                                 <tr>
                                     <th class="thfooter"><h5 class="letra2"><i class="margintop10 fa fa-phone fa-lg"> </i> Teléfono:</h5></th>
                                     <th>
-                                        <p><h5 class="letra2">0251-929-0344</h5></p>
-                                        <p><h5 class="letra2">0251-446-2093</h5></p>
-                                        <p><h5 class="letra2">0251-446-4734</h5></p>
-                                        <p><h5 class="letra2">0424-549-2498</h5></p>
-                                        <p><h5 class="letra2">0416-651-6288</h5></p>
-                                        <p><h5 class="letra2">0412-053-0883</h5></p>
+                                        <p><h5 class="letra2">(0251) 929-0344</h5></p>
+                                        <p><h5 class="letra2">(0251) 446-2093</h5></p>
+                                        <p><h5 class="letra2">(0251) 446-4734</h5></p>
+                                        <p><h5 class="letra2">(0424) 549-2498</h5></p>
+                                        <p><h5 class="letra2">(0416) 651-6288</h5></p>
+                                        <p><h5 class="letra2">(0412) 053-0883</h5></p>
                                     </th>
                                 </tr>
                                 <tr>
